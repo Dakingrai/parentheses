@@ -267,7 +267,7 @@ def main():
         model_name = model["name"]
         cache_dir = model["cache"]
         folder_name = model["name"].split("/")[-1]
-        data_dir = f"data/prelim/{folder_name}"
+        data_dir = f"data/{folder_name}"
         create_results_dir(data_dir)
         model = load_model(model_name, cache_dir)
         tokenizer = model.tokenizer

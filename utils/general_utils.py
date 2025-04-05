@@ -56,12 +56,11 @@ def save_file(data, file_name, save_csv=False):
 
 
 def collate_data(xs):
-    clean, corrupted, correct_idx, incorrect_idx = zip(*xs)
+    clean, correct_idx = zip(*xs)
     clean = list(clean)
-    corrupted = list(corrupted)
     # correct_idx and incorrect_idx are tuples containing the clean and
     # corrupted token ids for each respective data example in the batch
-    return clean, corrupted, correct_idx, incorrect_idx
+    return clean, correct_idx
 
 class MyDataset(Dataset):
     def __init__(self, filepath, num_samples):
@@ -90,7 +89,7 @@ class MyDataset(Dataset):
     def __getitem__(self, index):
         row = self.df.iloc[index]
         # correct_idx and incorrect_idx are the token_ids
-        return row['clean'], row['corrupted'], row['correct_idx'], row['incorrect_idx']
+        return row['prompt'], row['label_idx']
     
     def to_dataloader(self, batch_size: int):
         return DataLoader(self, batch_size=batch_size, collate_fn=collate_data)
