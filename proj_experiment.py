@@ -35,17 +35,18 @@ def process_comp(model, comp_activations, results, correct_idx):
     with torch.no_grad():
         logit_projection = comp_activations @ model.W_U  # Shape: (batch, seq_len, vocab_size)
 
-    # Convert logits to probabilities
-    token_probs = logit_projection.softmax(dim=-1)
-
     # Store top-10 predicted tokens
-    results["top-10-tokens"] = [model.tokenizer.decode(t) for t in token_probs.topk(10, dim=-1).indices[0, -1].tolist()]
+    results["top-10-tokens"] = [model.tokenizer.decode(t) for t in logit_projection.topk(10, dim=-1).indices[0, -1].tolist()]
 
     # Compute ranking for specific tokens
     results["one-paren-rank"] = get_logit_rank(logit_projection, 29897)
     results["two-paren-rank"] = get_logit_rank(logit_projection, 876)
     results["three-paren-rank"] = get_logit_rank(logit_projection, 4961)
     results["four-paren-rank"] = get_logit_rank(logit_projection, 13697)
+    results["one-paren-logit"] = logit_projection[0, -1, 29897].item()
+    results["two-paren-logit"] = logit_projection[0, -1, 876].item()
+    results["three-paren-logit"] = logit_projection[0, -1, 4961].item()
+    results["four-paren-logit"] = logit_projection[0, -1, 13697].item()
     
     # Determine correctness based on ranking
     correct_label = model.tokenizer.decode(correct_idx)
@@ -59,9 +60,10 @@ def process_comp(model, comp_activations, results, correct_idx):
     ranks = [results["one-paren-rank"], results["two-paren-rank"], results["three-paren-rank"], results["four-paren-rank"]]
 
     sorted_ranks = sorted(ranks)
-    lowest_rank = sorted_ranks[0]  # lowest rank
-    second_lowest_rank = sorted_ranks[1]  # second lowest rank
-    results["min-logit-diff"] = abs(lowest_rank - second_lowest_rank) 
+    results["min-logit-rank-diff"] = abs(sorted_ranks[0] - sorted_ranks[1])
+
+    sorted_logits = sorted([logit_projection[0, -1, 29897].item(), logit_projection[0, -1, 876].item(), logit_projection[0, -1, 4961].item(), logit_projection[0, -1, 13697].item()], reverse=True)
+    results["min-logit-diff"] = round(abs(sorted_logits[0] - sorted_logits[1]), 3)
 
     return results
 
