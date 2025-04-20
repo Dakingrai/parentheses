@@ -1,0 +1,1502 @@
+[
+    {
+        "clean": "k=191\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=821\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=444\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=26\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=759\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=449\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=300\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=787\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=486\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=249\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=161\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=512\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=812\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=108\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=219\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=657\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=227\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=453\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=318\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=799\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=852\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=747\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=169\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=1\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=479\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=980\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=816\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=511\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=372\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=500\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=704\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=992\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=364\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=164\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=483\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=907\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=678\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=593\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=481\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=319\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=408\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=9\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=350\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=445\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=1\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=322\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=367\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=980\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=510\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=604\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=988\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=721\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=138\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=630\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=662\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=229\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=48\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=20\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=823\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=305\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=951\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=965\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=846\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=22\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=30\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=320\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=579\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=495\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=917\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=95\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=361\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=450\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=192\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=493\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=273\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=0\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=194\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=890\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=322\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=793\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=603\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=868\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=42\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=802\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=720\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=945\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=3\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=342\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=959\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=206\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=346\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=169\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=114\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=406\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=861\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=804\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=719\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=257\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=580\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=706\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=823\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=784\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=380\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=456\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=687\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=724\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=540\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=150\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=437\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=568\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=232\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=393\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=543\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=276\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=588\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=507\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=130\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=438\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=600\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=95\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=656\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=302\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=163\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=223\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=54\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=171\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=661\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=770\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=673\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=249\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=568\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=188\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=814\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=619\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=173\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=450\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=206\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=77\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=875\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=484\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=564\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=272\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=172\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=250\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=702\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=115\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=882\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=867\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=385\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=263\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=288\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=548\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=586\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=454\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=16\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=620\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=737\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=921\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=474\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=308\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=681\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=398\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=157\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=683\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=338\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=499\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=266\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=89\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=839\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=693\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=170\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=110\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=2\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=507\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=69\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=131\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=53\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=697\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=156\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=478\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=952\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=870\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=549\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=120\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=561\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=460\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=846\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=688\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=293\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=980\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=311\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=229\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=341\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=575\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=94\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=148\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=623\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=113\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=975\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=688\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=602\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=788\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=348\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=301\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=61\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=190\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=582\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=642\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=127\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=87\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=971\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=956\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=702\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=711\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=944\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=128\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=781\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=896\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=2\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=611\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=399\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=172\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=335\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=273\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=673\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=834\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=672\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=754\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=100\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=952\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=569\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=250\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=108\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=372\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=133\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=174\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=907\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=937\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=483\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=684\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=971\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=644\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=488\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=954\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=65\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=437\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=85\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=11\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=917\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=411\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=751\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=214\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=410\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=948\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=176\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=306\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=530\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=598\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=46\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=782\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=940\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=67\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=298\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=548\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=243\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=687\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=828\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=569\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=550\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=126\nmy_function():\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=464\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=860\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=222\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=885\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=705\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=647\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=300\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=551\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=504\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=903\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=920\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=802\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=854\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=452\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=861\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=6\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=387\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=383\nfor i in range(1, 15):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=43\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=134\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=564\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=852\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=542\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=875\nwhile k < 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=862\nwhile k>5:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=360\nfor i in range(10):\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=679\nif k == 2:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=242\nif k<3:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=657\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=923\ntry:\n   ",
+        "correct_idx": 220,
+        "clean_label": " "
+    }
+]

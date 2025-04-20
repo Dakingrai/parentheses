@@ -1,0 +1,1502 @@
+[
+    {
+        "prompt": "k=504\nif k == 2:\n    for i in range(10):\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=502\nif k<3:\n    if k<3:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=866\nif k == 2:\n    while k>5:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=831\nfor i in range(10):\n    for i in range(1, 15):\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=260\nwhile k < 2:\n    try:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=612\nif k == 2:\n    while k>5:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=264\nwhile k>5:\n    for i in range(1, 15):\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=593\nfor i in range(1, 15):\n    if k == 2:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=251\nfor i in range(1, 15):\n    if k == 2:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=957\nfor i in range(1, 15):\n    while k>5:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=814\nif k<3:\n    if k == 2:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=656\nwhile k>5:\n    while k>5:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=734\nmy_function():\n    if k == 2:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=651\nwhile k < 2:\n    my_function():\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=316\nif k<3:\n    my_function():\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=482\nwhile k < 2:\n    for i in range(10):\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=100\ntry:\n    try:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=892\nfor i in range(1, 15):\n    while k < 2:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=4\nfor i in range(1, 15):\n    for i in range(1, 15):\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=387\nfor i in range(1, 15):\n    for i in range(10):\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=100\nif k == 2:\n    if k == 2:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=160\nif k<3:\n    while k>5:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=37\ntry:\n    try:\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=691\nwhile k < 2:\n    try:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=203\ntry:\n    while k>5:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=522\ntry:\n    my_function():\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=909\ntry:\n    try:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=281\nwhile k>5:\n    try:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=559\nmy_function():\n    my_function():\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=114\nfor i in range(1, 15):\n    if k == 2:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=468\nwhile k>5:\n    try:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=447\nfor i in range(1, 15):\n    while k < 2:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=622\nfor i in range(10):\n    if k == 2:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=826\nmy_function():\n    if k<3:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=291\nif k == 2:\n    while k>5:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=29\nfor i in range(1, 15):\n    if k == 2:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=391\nwhile k < 2:\n    my_function():\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=278\nif k<3:\n    if k == 2:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=349\nfor i in range(10):\n    try:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=398\nfor i in range(10):\n    if k == 2:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=266\nif k<3:\n    for i in range(10):\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=79\nfor i in range(1, 15):\n    if k<3:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=296\nwhile k>5:\n    while k < 2:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=103\nwhile k>5:\n    while k < 2:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=426\nmy_function():\n    try:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=298\nif k == 2:\n    if k == 2:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=711\nif k == 2:\n    while k>5:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=286\nwhile k < 2:\n    if k == 2:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=24\nif k == 2:\n    if k == 2:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=941\nif k<3:\n    for i in range(10):\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=545\nfor i in range(1, 15):\n    my_function():\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=610\nwhile k>5:\n    while k < 2:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=929\ntry:\n    for i in range(10):\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=348\nmy_function():\n    while k < 2:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=143\nwhile k>5:\n    for i in range(10):\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=291\nwhile k < 2:\n    my_function():\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=403\nfor i in range(1, 15):\n    try:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=625\nif k == 2:\n    my_function():\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=222\nif k == 2:\n    while k>5:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=404\nif k == 2:\n    while k>5:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=19\nwhile k>5:\n    my_function():\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=511\nmy_function():\n    while k>5:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=371\nwhile k>5:\n    try:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=202\nmy_function():\n    my_function():\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=999\nwhile k>5:\n    while k < 2:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=462\nmy_function():\n    while k < 2:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=380\ntry:\n    my_function():\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=175\nwhile k < 2:\n    for i in range(1, 15):\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=640\nwhile k>5:\n    for i in range(10):\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=756\nif k == 2:\n    while k>5:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=432\nfor i in range(1, 15):\n    if k == 2:\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=619\nmy_function():\n    try:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=252\nif k<3:\n    my_function():\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=761\nfor i in range(1, 15):\n    for i in range(1, 15):\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=231\nif k<3:\n    for i in range(10):\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=149\nmy_function():\n    my_function():\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=947\nif k<3:\n    for i in range(1, 15):\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=762\nwhile k>5:\n    if k<3:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=46\ntry:\n    for i in range(1, 15):\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=245\nfor i in range(1, 15):\n    if k == 2:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=161\nif k<3:\n    while k>5:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=626\nwhile k>5:\n    while k>5:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=455\nwhile k < 2:\n    if k<3:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=459\nif k<3:\n    if k == 2:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=367\nif k<3:\n    try:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=917\nwhile k < 2:\n    if k<3:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=817\nfor i in range(1, 15):\n    while k < 2:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=783\nif k == 2:\n    for i in range(1, 15):\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=956\nfor i in range(1, 15):\n    for i in range(10):\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=539\nif k<3:\n    my_function():\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=183\nmy_function():\n    try:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=601\nif k<3:\n    for i in range(1, 15):\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=908\nif k == 2:\n    while k < 2:\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=1\nfor i in range(1, 15):\n    my_function():\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=595\nwhile k < 2:\n    my_function():\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=760\nfor i in range(10):\n    while k < 2:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=885\nwhile k>5:\n    if k == 2:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=104\nif k == 2:\n    for i in range(1, 15):\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=158\nif k == 2:\n    for i in range(10):\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=551\nfor i in range(1, 15):\n    if k<3:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=383\nfor i in range(1, 15):\n    if k<3:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=517\nwhile k>5:\n    try:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=717\nwhile k < 2:\n    while k < 2:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=471\nif k == 2:\n    try:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=42\nif k<3:\n    for i in range(1, 15):\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=953\nwhile k>5:\n    for i in range(1, 15):\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=874\nfor i in range(10):\n    try:\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=644\nif k == 2:\n    try:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=175\nwhile k>5:\n    if k<3:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=877\nwhile k>5:\n    try:\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=427\nwhile k>5:\n    while k < 2:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=115\nif k<3:\n    for i in range(10):\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=480\nwhile k < 2:\n    try:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=369\nfor i in range(1, 15):\n    my_function():\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=984\nfor i in range(1, 15):\n    while k>5:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=394\nwhile k < 2:\n    if k == 2:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=759\ntry:\n    if k<3:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=866\nif k<3:\n    try:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=132\nwhile k>5:\n    while k < 2:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=459\nwhile k < 2:\n    while k < 2:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=404\nif k == 2:\n    while k>5:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=653\nmy_function():\n    while k>5:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=340\nfor i in range(1, 15):\n    my_function():\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=577\nmy_function():\n    while k>5:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=832\nmy_function():\n    while k>5:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=56\nwhile k>5:\n    try:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=338\nfor i in range(10):\n    if k<3:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=423\nfor i in range(10):\n    if k<3:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=43\nif k<3:\n    for i in range(1, 15):\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=418\nwhile k>5:\n    my_function():\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=795\nif k<3:\n    if k<3:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=917\nwhile k>5:\n    if k<3:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=209\nwhile k < 2:\n    if k == 2:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=122\nwhile k>5:\n    while k>5:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=782\nif k<3:\n    while k>5:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=704\ntry:\n    while k>5:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=877\ntry:\n    for i in range(1, 15):\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=160\nmy_function():\n    if k<3:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=965\nwhile k>5:\n    try:\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=893\nfor i in range(10):\n    my_function():\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=716\nif k<3:\n    while k>5:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=592\nif k<3:\n    try:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=594\nmy_function():\n    while k>5:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=49\nif k == 2:\n    if k == 2:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=200\nwhile k>5:\n    if k<3:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=224\nmy_function():\n    while k < 2:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=74\nwhile k < 2:\n    if k == 2:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=449\nmy_function():\n    if k == 2:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=975\nif k<3:\n    if k == 2:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=729\nmy_function():\n    my_function():\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=126\nfor i in range(1, 15):\n    for i in range(10):\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=723\ntry:\n    if k<3:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=128\nif k == 2:\n    if k<3:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=454\nif k == 2:\n    while k < 2:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=41\ntry:\n    try:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=105\ntry:\n    while k>5:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=541\nif k == 2:\n    while k < 2:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=84\nfor i in range(10):\n    if k<3:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=419\nfor i in range(1, 15):\n    if k == 2:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=44\nfor i in range(10):\n    for i in range(10):\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=187\nmy_function():\n    my_function():\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=314\nfor i in range(1, 15):\n    while k < 2:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=575\nmy_function():\n    my_function():\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=157\nif k == 2:\n    while k < 2:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=664\nfor i in range(10):\n    while k>5:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=587\nif k<3:\n    my_function():\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=420\nwhile k < 2:\n    for i in range(10):\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=432\nif k<3:\n    try:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=696\ntry:\n    while k < 2:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=26\nmy_function():\n    while k>5:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=45\ntry:\n    if k<3:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=428\nfor i in range(1, 15):\n    try:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=774\nif k<3:\n    if k == 2:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=703\nmy_function():\n    for i in range(10):\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=194\nif k == 2:\n    if k<3:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=639\nfor i in range(10):\n    for i in range(10):\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=501\ntry:\n    if k == 2:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=975\nwhile k>5:\n    my_function():\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=51\nif k<3:\n    my_function():\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=900\nfor i in range(1, 15):\n    for i in range(1, 15):\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=234\nwhile k>5:\n    my_function():\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=655\nmy_function():\n    while k>5:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=268\ntry:\n    try:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=664\ntry:\n    if k<3:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=400\nif k == 2:\n    if k == 2:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=998\nfor i in range(10):\n    my_function():\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=257\nmy_function():\n    if k == 2:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=133\nif k == 2:\n    while k>5:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=482\nwhile k>5:\n    if k == 2:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=633\nif k == 2:\n    for i in range(1, 15):\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=883\nif k == 2:\n    while k>5:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=650\nmy_function():\n    try:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=45\ntry:\n    if k<3:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=525\ntry:\n    while k>5:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=425\nmy_function():\n    while k < 2:\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=546\nwhile k < 2:\n    for i in range(1, 15):\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=43\nif k == 2:\n    if k == 2:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=990\nfor i in range(10):\n    my_function():\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=132\nfor i in range(1, 15):\n    try:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=41\nif k == 2:\n    try:\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=917\nif k<3:\n    for i in range(10):\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=140\nwhile k < 2:\n    my_function():\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=511\ntry:\n    my_function():\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=920\nwhile k>5:\n    while k < 2:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=458\nwhile k>5:\n    if k<3:\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=860\nfor i in range(10):\n    while k>5:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=527\nif k == 2:\n    for i in range(10):\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=963\nwhile k < 2:\n    if k<3:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=453\nfor i in range(1, 15):\n    while k>5:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=69\ntry:\n    while k>5:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=240\nfor i in range(1, 15):\n    for i in range(1, 15):\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=458\nmy_function():\n    if k<3:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=182\nfor i in range(10):\n    my_function():\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=122\nwhile k < 2:\n    if k == 2:\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=4\nmy_function():\n    try:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=402\ntry:\n    for i in range(1, 15):\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=473\nwhile k < 2:\n    try:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=748\ntry:\n    try:\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=511\nmy_function():\n    for i in range(10):\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=307\nfor i in range(10):\n    my_function():\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=825\ntry:\n    while k < 2:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=959\nwhile k>5:\n    if k<3:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=466\nmy_function():\n    if k<3:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=759\nwhile k>5:\n    for i in range(1, 15):\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=792\ntry:\n    if k<3:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=550\nfor i in range(1, 15):\n    while k>5:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=783\nwhile k>5:\n    if k<3:\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=407\ntry:\n    for i in range(1, 15):\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=37\nif k == 2:\n    if k<3:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=655\nfor i in range(1, 15):\n    for i in range(1, 15):\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=296\nwhile k < 2:\n    while k>5:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=635\nfor i in range(1, 15):\n    while k>5:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=57\nif k == 2:\n    while k>5:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=948\nwhile k>5:\n    for i in range(10):\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=781\ntry:\n    if k == 2:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=159\nmy_function():\n    for i in range(1, 15):\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=957\nmy_function():\n    for i in range(10):\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=817\nif k == 2:\n    for i in range(1, 15):\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=391\nif k<3:\n    for i in range(10):\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=171\nfor i in range(10):\n    if k<3:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=347\ntry:\n    while k>5:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=126\nwhile k < 2:\n    try:\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=258\nfor i in range(10):\n    if k == 2:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=422\nwhile k>5:\n    if k<3:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=125\nwhile k>5:\n    for i in range(1, 15):\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=631\nwhile k < 2:\n    if k<3:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=650\nif k == 2:\n    my_function():\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=789\nwhile k < 2:\n    for i in range(10):\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=120\nwhile k < 2:\n    if k<3:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=460\nif k<3:\n    while k>5:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=18\nif k<3:\n    while k>5:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=832\nwhile k < 2:\n    for i in range(1, 15):\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=722\nif k<3:\n    while k < 2:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=538\nif k == 2:\n    for i in range(10):\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=116\nif k<3:\n    for i in range(1, 15):\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=354\nif k == 2:\n    while k < 2:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=59\nfor i in range(10):\n    while k < 2:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=735\ntry:\n    for i in range(10):\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=925\ntry:\n    if k<3:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=207\nwhile k>5:\n    for i in range(1, 15):\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=434\nfor i in range(1, 15):\n    while k>5:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=17\nif k == 2:\n    while k < 2:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=997\nwhile k < 2:\n    for i in range(1, 15):\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=882\nwhile k>5:\n    try:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=306\nif k<3:\n    while k>5:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=46\nmy_function():\n    try:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=327\nif k == 2:\n    for i in range(1, 15):\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=52\ntry:\n    my_function():\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=755\nfor i in range(1, 15):\n    for i in range(10):\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=752\nif k == 2:\n    while k>5:\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=677\nwhile k>5:\n    if k<3:\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=987\nwhile k < 2:\n    if k<3:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=180\nwhile k < 2:\n    if k == 2:\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=632\nfor i in range(10):\n    if k<3:\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=505\nif k<3:\n    if k<3:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=638\nwhile k>5:\n    while k < 2:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=977\nfor i in range(10):\n    my_function():\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=31\nwhile k < 2:\n    my_function():\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=609\nif k == 2:\n    for i in range(1, 15):\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=626\nfor i in range(10):\n    while k>5:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=329\ntry:\n    if k<3:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=127\ntry:\n    for i in range(1, 15):\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=169\nmy_function():\n    if k<3:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=624\nwhile k>5:\n    my_function():\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=61\nmy_function():\n    if k<3:\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=694\nif k == 2:\n    my_function():\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=997\nif k == 2:\n    for i in range(10):\n        while k>5:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=74\nwhile k < 2:\n    for i in range(1, 15):\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=527\nmy_function():\n    if k == 2:\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=255\nif k<3:\n    my_function():\n        try:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=462\nwhile k>5:\n    while k>5:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=16\ntry:\n    if k<3:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=651\nif k == 2:\n    if k<3:\n        if k<3:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=680\nwhile k>5:\n    if k == 2:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=552\nwhile k>5:\n    if k == 2:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=1000\nif k<3:\n    if k == 2:\n        for i in range(1, 15):\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=906\nfor i in range(1, 15):\n    try:\n        my_function():\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=997\nwhile k < 2:\n    while k>5:\n        if k == 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=285\ntry:\n    for i in range(10):\n        while k < 2:\n",
+        "label": 632,
+        "label_idx": "           "
+    },
+    {
+        "prompt": "k=759\ntry:\n    if k == 2:\n        for i in range(10):\n",
+        "label": 632,
+        "label_idx": "           "
+    }
+]

@@ -1,0 +1,2105 @@
+{
+    "accuracy": 0.08285714285714285,
+    "prompt_results": [
+        {
+            "prompt": "k=355\nif k == 2:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=84\nmy_function():\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=356\nif k == 2:\n   my_function():\n",
+            "label": "     ",
+            "pred": " ",
+            "correct": false
+        },
+        {
+            "prompt": "k=955\nfor i in range(1, 15):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=634\nmy_function():\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=500\nfor i in range(1, 15):\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=376\nfor i in range(10):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=495\nwhile k>5:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=581\nwhile k>5:\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=912\nif k == 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=352\nif k<3:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=945\nfor i in range(1, 15):\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=673\ntry:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=520\nfor i in range(1, 15):\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=994\nwhile k>5:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=911\ntry:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=71\nmy_function():\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=832\nif k == 2:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=189\nif k<3:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=731\nif k == 2:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=580\ntry:\n   my_function():\n",
+            "label": "     ",
+            "pred": "except",
+            "correct": false
+        },
+        {
+            "prompt": "k=962\nwhile k < 2:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=509\ntry:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=237\nif k == 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=708\nif k == 2:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=742\nwhile k < 2:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=518\nfor i in range(10):\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=963\nmy_function():\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=617\nfor i in range(1, 15):\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=623\nwhile k>5:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=461\nwhile k < 2:\n   my_function():\n",
+            "label": "     ",
+            "pred": " ",
+            "correct": false
+        },
+        {
+            "prompt": "k=875\nfor i in range(1, 15):\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=344\nfor i in range(10):\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=537\nif k == 2:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=285\nwhile k>5:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=118\nwhile k < 2:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=462\nif k == 2:\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=231\nwhile k>5:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=251\nmy_function():\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=974\nwhile k < 2:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=446\nmy_function():\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=987\nif k<3:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=979\nwhile k>5:\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=800\nwhile k < 2:\n   my_function():\n",
+            "label": "     ",
+            "pred": " ",
+            "correct": false
+        },
+        {
+            "prompt": "k=421\nif k<3:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=605\nwhile k>5:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=849\nfor i in range(10):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=864\nwhile k < 2:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=285\nfor i in range(10):\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=22\nfor i in range(10):\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=231\nwhile k < 2:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=415\nfor i in range(10):\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=477\nwhile k>5:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=22\nwhile k>5:\n   my_function():\n",
+            "label": "     ",
+            "pred": " ",
+            "correct": false
+        },
+        {
+            "prompt": "k=29\nwhile k < 2:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=396\nif k == 2:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=597\ntry:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=562\nfor i in range(1, 15):\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=459\nfor i in range(1, 15):\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=640\nif k == 2:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=386\nif k<3:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=4\nmy_function():\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=785\nif k == 2:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=208\nfor i in range(10):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=739\nfor i in range(1, 15):\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=220\nwhile k < 2:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=674\nwhile k>5:\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=295\nwhile k>5:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=365\nif k == 2:\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=574\nwhile k>5:\n   my_function():\n",
+            "label": "     ",
+            "pred": " ",
+            "correct": false
+        },
+        {
+            "prompt": "k=698\nif k == 2:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=632\ntry:\n   my_function():\n",
+            "label": "     ",
+            "pred": " ",
+            "correct": false
+        },
+        {
+            "prompt": "k=828\nwhile k>5:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=781\nif k<3:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=83\nif k<3:\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=541\nif k<3:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=997\nfor i in range(1, 15):\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=603\nfor i in range(1, 15):\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=490\nfor i in range(10):\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=659\nfor i in range(10):\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=231\nwhile k>5:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=116\nif k<3:\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=231\nmy_function():\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=965\nif k == 2:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=443\nwhile k>5:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=512\nwhile k>5:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=71\nif k == 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=52\nwhile k>5:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=148\nwhile k < 2:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=746\nfor i in range(10):\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=653\nif k == 2:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=998\nif k == 2:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=986\nfor i in range(1, 15):\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=334\nfor i in range(10):\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=455\nif k == 2:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=860\nwhile k < 2:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=888\nfor i in range(1, 15):\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=143\nfor i in range(10):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=164\nmy_function():\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=784\nif k == 2:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=376\nwhile k < 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=721\nwhile k < 2:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=138\nfor i in range(1, 15):\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=400\nfor i in range(10):\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=388\nfor i in range(10):\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=392\nif k<3:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=91\nwhile k>5:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=212\nwhile k>5:\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=935\nif k<3:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=685\nif k == 2:\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=772\nfor i in range(10):\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=165\nif k<3:\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=409\nif k == 2:\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=413\nwhile k>5:\n   my_function():\n",
+            "label": "     ",
+            "pred": " ",
+            "correct": false
+        },
+        {
+            "prompt": "k=372\ntry:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=392\nmy_function():\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=886\ntry:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=846\nwhile k < 2:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=888\nmy_function():\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=272\nwhile k>5:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=714\nif k == 2:\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=129\nwhile k>5:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=146\nmy_function():\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=281\nmy_function():\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=20\nwhile k>5:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=64\nwhile k>5:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=570\nif k<3:\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=463\nwhile k < 2:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=385\nif k<3:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=186\nif k == 2:\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=76\nfor i in range(10):\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=523\nfor i in range(10):\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=755\nfor i in range(10):\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=189\ntry:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=558\nif k<3:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=376\ntry:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=37\nmy_function():\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=645\nif k == 2:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=510\nif k == 2:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=944\nif k<3:\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=861\nwhile k>5:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=726\ntry:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=922\nif k == 2:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=839\nfor i in range(1, 15):\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=38\nfor i in range(10):\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=360\nmy_function():\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=753\nmy_function():\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=117\nfor i in range(10):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=418\nwhile k < 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=488\nwhile k < 2:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=374\ntry:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=832\nmy_function():\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=493\nwhile k < 2:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=219\nfor i in range(10):\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=121\nmy_function():\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=176\nfor i in range(10):\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=756\nmy_function():\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=865\nif k<3:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=213\nfor i in range(10):\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=853\ntry:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=236\nwhile k>5:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=250\ntry:\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=989\nif k == 2:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=918\nfor i in range(1, 15):\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=908\nfor i in range(10):\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=317\nmy_function():\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=365\ntry:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=797\nif k<3:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=595\nif k == 2:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=903\nif k<3:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=113\nfor i in range(1, 15):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=389\nwhile k>5:\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=540\nfor i in range(10):\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=876\nif k<3:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=502\ntry:\n   my_function():\n",
+            "label": "     ",
+            "pred": " ",
+            "correct": false
+        },
+        {
+            "prompt": "k=982\nfor i in range(1, 15):\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=86\ntry:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=88\nfor i in range(1, 15):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=605\nmy_function():\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=843\nfor i in range(10):\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=540\nfor i in range(1, 15):\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=328\nwhile k>5:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=243\nfor i in range(10):\n   while k>5:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=700\nfor i in range(1, 15):\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=66\nif k == 2:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=482\nwhile k < 2:\n   my_function():\n",
+            "label": "     ",
+            "pred": " ",
+            "correct": false
+        },
+        {
+            "prompt": "k=216\nfor i in range(1, 15):\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=4\nif k<3:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=117\nwhile k>5:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=510\nwhile k < 2:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=698\nmy_function():\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=774\nwhile k < 2:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=579\nfor i in range(1, 15):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=457\nmy_function():\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=825\ntry:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=188\nfor i in range(1, 15):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=720\nwhile k < 2:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=594\ntry:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=889\nwhile k < 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=259\nmy_function():\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=553\nmy_function():\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=238\ntry:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=321\nfor i in range(1, 15):\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=151\nif k == 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=989\nfor i in range(1, 15):\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=927\nif k == 2:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=444\nmy_function():\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=684\nwhile k>5:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=683\nif k<3:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=673\nwhile k>5:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=488\nif k == 2:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=983\nif k<3:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=512\nmy_function():\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=497\nfor i in range(1, 15):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=818\ntry:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=203\nif k<3:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=157\nmy_function():\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=38\nfor i in range(1, 15):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=762\nfor i in range(1, 15):\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=673\ntry:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=551\nif k == 2:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=839\nfor i in range(10):\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=630\ntry:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=236\ntry:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=599\nwhile k < 2:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=922\nwhile k>5:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=645\ntry:\n   my_function():\n",
+            "label": "     ",
+            "pred": " ",
+            "correct": false
+        },
+        {
+            "prompt": "k=806\nfor i in range(10):\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=425\nif k<3:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=680\nwhile k < 2:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=737\nwhile k>5:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=35\nwhile k < 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=776\nfor i in range(1, 15):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=990\nwhile k < 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=536\nif k == 2:\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=916\nif k == 2:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=272\nif k<3:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=520\nfor i in range(10):\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=333\nwhile k < 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=333\nif k == 2:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=617\nwhile k < 2:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=585\nfor i in range(10):\n   while k>5:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=20\nif k<3:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=673\nwhile k < 2:\n   my_function():\n",
+            "label": "     ",
+            "pred": " ",
+            "correct": false
+        },
+        {
+            "prompt": "k=354\nfor i in range(10):\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=443\nwhile k < 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=915\nif k == 2:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=278\nif k == 2:\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=601\nwhile k < 2:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=556\ntry:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=249\nwhile k>5:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=114\nif k<3:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=272\nfor i in range(1, 15):\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=199\nwhile k < 2:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=822\nif k == 2:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=22\ntry:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=480\nfor i in range(10):\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=302\nif k == 2:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=502\nfor i in range(1, 15):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=675\nif k == 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=619\nwhile k < 2:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=614\nmy_function():\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=220\ntry:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=574\ntry:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=584\nmy_function():\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=119\nmy_function():\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=389\nmy_function():\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=308\nfor i in range(10):\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=617\nfor i in range(10):\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=67\nwhile k>5:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=561\nwhile k>5:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=507\nif k == 2:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=872\nwhile k>5:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=730\nfor i in range(10):\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=320\nif k<3:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=179\ntry:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=772\nmy_function():\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=496\nwhile k < 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=494\ntry:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=958\nfor i in range(1, 15):\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=665\nwhile k < 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=314\nmy_function():\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=905\nfor i in range(1, 15):\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=973\nif k<3:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=835\nif k == 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=638\nif k == 2:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=11\nfor i in range(10):\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=543\nfor i in range(10):\n   while k>5:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=806\nif k<3:\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=947\nif k == 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=931\nwhile k>5:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=841\nif k<3:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=108\nwhile k < 2:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=618\nif k == 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=270\nif k == 2:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=10\ntry:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=57\nwhile k>5:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=982\ntry:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=936\nif k<3:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=270\nif k == 2:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=561\nfor i in range(10):\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=233\nwhile k < 2:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=392\nmy_function():\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=852\ntry:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=778\nwhile k>5:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=185\nif k == 2:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=906\ntry:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=672\nfor i in range(1, 15):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=460\nif k == 2:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=504\nfor i in range(1, 15):\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=7\nfor i in range(10):\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=904\ntry:\n   my_function():\n",
+            "label": "     ",
+            "pred": "except",
+            "correct": false
+        },
+        {
+            "prompt": "k=805\nmy_function():\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=68\nmy_function():\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=395\nif k == 2:\n   for i in range(10):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=563\nif k<3:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=12\nif k == 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=532\nwhile k>5:\n   my_function():\n",
+            "label": "     ",
+            "pred": " ",
+            "correct": false
+        },
+        {
+            "prompt": "k=873\nfor i in range(1, 15):\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=631\ntry:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=861\nwhile k < 2:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=350\nif k<3:\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=644\ntry:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=759\nfor i in range(1, 15):\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=823\ntry:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=800\nwhile k>5:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=112\nwhile k < 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=841\nfor i in range(1, 15):\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=242\nif k == 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=686\nwhile k < 2:\n   if k == 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=920\nwhile k < 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=767\ntry:\n   my_function():\n",
+            "label": "     ",
+            "pred": " ",
+            "correct": false
+        },
+        {
+            "prompt": "k=232\ntry:\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=237\nfor i in range(10):\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=626\nmy_function():\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=444\nmy_function():\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=971\nif k == 2:\n   try:\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=559\nfor i in range(10):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=596\nmy_function():\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "     ",
+            "correct": true
+        },
+        {
+            "prompt": "k=657\nwhile k>5:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=964\nfor i in range(1, 15):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=749\ntry:\n   my_function():\n",
+            "label": "     ",
+            "pred": " ",
+            "correct": false
+        },
+        {
+            "prompt": "k=904\nif k == 2:\n   while k>5:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=569\nfor i in range(10):\n   if k<3:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=699\nif k == 2:\n   try:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=605\nfor i in range(10):\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=943\nfor i in range(10):\n   my_function():\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=259\nfor i in range(10):\n   for i in range(1, 15):\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=189\ntry:\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        },
+        {
+            "prompt": "k=438\nfor i in range(10):\n   while k < 2:\n",
+            "label": "     ",
+            "pred": "    ",
+            "correct": false
+        }
+    ]
+}

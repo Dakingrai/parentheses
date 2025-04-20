@@ -6,6 +6,7 @@ import pdb
 import os
 import gc
 import time
+import random
 
 # Load necessary utilities
 from utils.general_utils import MyDataset, load_model
@@ -29,6 +30,25 @@ def get_logit_rank(logits, index):
     sorted_logits, sorted_indices = torch.sort(last_token_logits, descending=True)
     rank = (sorted_indices == index).nonzero(as_tuple=True)[0].item() + 1
     return rank
+
+def get_logit_rank_batch(logit_projections, token_id):
+    """
+    Computes the rank of a specific token for each neuron's logit projection in a batch.
+    """
+    clear_cache()
+    _, sorted_indices = torch.sort(logit_projections, dim=-1, descending=True)
+    
+    # Get the rank of token_id for each batch element
+    ranks = (sorted_indices == token_id).nonzero(as_tuple=True)
+    # Extract ranks for each batch element
+    batch_ranks = torch.zeros(logit_projections.shape[0], dtype=torch.long).to(DEVICE)
+    batch_ranks[ranks[0]] = ranks[1] + 1  # Adjust for 1-based ranking
+
+    clear_cache()
+    del sorted_indices
+    del ranks
+    
+    return batch_ranks
 
 def process_comp(model, comp_activations, results, correct_idx):
     # Project activations through the unembedding matrix
@@ -203,9 +223,8 @@ def save_paren_neurons(model, results_path, threshold_rank=50):
 
 def is_neuron_activated(cache, layer, neuron, threshold_rank=50):
     """Process attention activations for a specific attention head."""
-    results = {}
 
-    first_layer_mlp_act = cache[f"blocks.{layer}.mlp.hook_pre"][0][-1]
+    first_layer_mlp_act = cache[f"blocks.{layer}.mlp.hook_pre"]
 
     # Compute ranking for specific tokens
     neuron_rank = get_logit_rank(first_layer_mlp_act, neuron)
@@ -218,38 +237,60 @@ def is_neuron_activated(cache, layer, neuron, threshold_rank=50):
    
     return False
 
-        
-def mlp_neuron_proj_experiment(model, paren_neurons, data_path, results_path, n_paren):
-    data = read_json(data_path)
+
+def mlp_neuron_proj_experiment(model, paren_neurons, data, results_path, n_paren=4):
     # calculate the accuracy of each neurons in paren_neurons
     results = []
     # Initialize accuracy tracking
-    accuracy_counts = {neuron["neuron"]: {"correct": 0, "incorrect": 0} for neuron in paren_neurons}
+    accuracy_counts = {neuron["neuron"]: 
+                       {"true_positive": 0, "false_positive": 0, "false_negative": 0, "true_negative": 0} 
+                       for neuron in paren_neurons}
     # Store results for each neuron
     total = 0
-    for each in data:
+    for each in tqdm(data):
         total += 1
         with torch.no_grad():
             _, cache = model.run_with_cache(each["prompt"])
         for neuron in paren_neurons:
             is_activated = is_neuron_activated(cache, neuron["layer"], neuron["neuron"], threshold_rank=50)
+
             if is_activated and each["label"] == neuron["label"]:
-                accuracy_counts[neuron["neuron"]]["correct"] += 1
-            if is_activated and each["label"] != neuron["label"]:
-                accuracy_counts[neuron["neuron"]]["incorrect"] += 1
+                accuracy_counts[neuron["neuron"]]["true_positive"] += 1
             
-            clear_cache()
-            del is_activated
+            if not is_activated and each["label"] == neuron["label"]:
+                accuracy_counts[neuron["neuron"]]["false_negative"] += 1
+            
+            if is_activated and not each["label"] == neuron["label"]:
+                accuracy_counts[neuron["neuron"]]["false_positive"] += 1
+            
+            if not is_activated and not each["label"] == neuron["label"]:
+                accuracy_counts[neuron["neuron"]]["true_negative"] += 1
+
+            
         # clear cache
         clear_cache()
         del cache
 
     
     for neuron in paren_neurons:
+        true_positive = accuracy_counts[neuron["neuron"]]["true_positive"]
+        false_positive = accuracy_counts[neuron["neuron"]]["false_positive"]
+        false_negative = accuracy_counts[neuron["neuron"]]["false_negative"]
+        true_negative = accuracy_counts[neuron["neuron"]]["true_negative"]
+        precision = true_positive / (true_positive + false_positive) if (true_positive + false_positive) > 0 else 0
+        recall = true_positive / (true_positive + false_negative) if (true_positive + false_negative) > 0 else 0
+        f1_score = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
         results.append({
             "neuron": f"L{neuron['layer']}N{neuron['neuron']}",
-            "accuracy": accuracy_counts[neuron["neuron"]]["correct"]/total,
-            "incorrect_accuracy": accuracy_counts[neuron["neuron"]]["incorrect"]/total,
+            "true_positive": accuracy_counts[neuron["neuron"]]["true_positive"],
+            "false_positive": accuracy_counts[neuron["neuron"]]["false_positive"],
+            "false_negative": accuracy_counts[neuron["neuron"]]["false_negative"],
+            "true_negative": accuracy_counts[neuron["neuron"]]["true_negative"],
+            "precision": precision,
+            "recall": recall,
+            "f1_score": f1_score,
+            "n_total": total,
+            "label": neuron["label"]
         })
     save_file(results, f"{results_path}/{n_paren}_neuron_acc.json")
             
@@ -263,9 +304,10 @@ def clear_cache():
     torch.cuda.empty_cache()
 
 def main():
+    random.seed(42)
     clear_cache()
     models = read_json("utils/models.json")
-    # models = models[-3:-2]
+    models = models[3:]
     n_paren = 4 # Number of parentheses to consider
     for model in models:
         print(f"Running experiments for {model['name']}")
@@ -277,25 +319,65 @@ def main():
         create_results_dir(results_dir)
         model = load_model(model_name, cache_dir)
         
-        # paren_neurons = save_paren_neurons(model, results_dir, threshold_rank=50)
-        # print(f"Number of neurons: {len(paren_neurons)}")
+        # FF Neurons
+        neuron_result_dir = f"{results_dir}/last_paren/neurons"
+        create_results_dir(results_dir)
+
+        paren_neurons = save_paren_neurons(model, results_dir, threshold_rank=50)
+        print(f"Number of neurons: {len(paren_neurons)}")
         
-        HEADS = [(layer, head) for layer in range(model.cfg.n_layers) for head in range(model.cfg.n_heads)]
-        start_time = time.time()
-        for n in tqdm(range(n_paren)): 
-            last_data_path = f"{data_dir}/train_labeled_last_paren_{n}.json"
-            last_results_path = f"{results_dir}/last_paren/"
-            create_results_dir(last_results_path)
+        one_paren_neurons = [neuron for neuron in paren_neurons if neuron["label"] == ")"]
+        two_paren_neurons = [neuron for neuron in paren_neurons if neuron["label"] == "))"]
+        three_paren_neurons = [neuron for neuron in paren_neurons if neuron["label"] == ")))"]
+        four_paren_neurons = [neuron for neuron in paren_neurons if neuron["label"] == "))))"]
 
-            last_results_path_attn = f"{last_results_path}/attn"
-            create_results_dir(last_results_path_attn)
-            attn_proj_experiment(model, last_data_path, HEADS, n, results_path=last_results_path)
+        n_data_size = 200
+        one_paren_data_path = f"{data_dir}/train_labeled_last_paren_0.json"
+        one_paren_data = read_json(one_paren_data_path)[:n_data_size]
+        two_paren_data_path = f"{data_dir}/train_labeled_last_paren_1.json"
+        two_paren_data = read_json(two_paren_data_path)[:n_data_size]
+        three_paren_data_path = f"{data_dir}/train_labeled_last_paren_2.json"
+        three_paren_data = read_json(three_paren_data_path)[:n_data_size]
+        four_paren_data_path = f"{data_dir}/train_labeled_last_paren_3.json"
+        four_paren_data = read_json(four_paren_data_path)[:n_data_size]
 
-            # last_results_path_neurons = f"{last_results_path}/neurons"
-            # create_results_dir(last_results_path_neurons)
-            # mlp_neuron_proj_experiment(model, paren_neurons, last_data_path, results_path=last_results_path_neurons, n_paren=n)
-            # clear_cache()
-        print(f"Time taken: {time.time() - start_time}")
+        one_paren_data_tmp = two_paren_data + three_paren_data + four_paren_data
+        random.shuffle(one_paren_data_tmp)
+        one_paren_data = one_paren_data + one_paren_data_tmp[:n_data_size]
+        mlp_neuron_proj_experiment(model, one_paren_neurons, one_paren_data, neuron_result_dir, n_paren=1)
+
+        two_paren_data_tmp = one_paren_data + three_paren_data + four_paren_data
+        random.shuffle(two_paren_data_tmp)
+        two_paren_data = two_paren_data + two_paren_data_tmp[:n_data_size]
+        mlp_neuron_proj_experiment(model, two_paren_neurons, two_paren_data, neuron_result_dir, n_paren=2)
+
+        three_paren_data_tmp = one_paren_data + two_paren_data + four_paren_data
+        random.shuffle(three_paren_data_tmp)
+        three_paren_data = three_paren_data + three_paren_data_tmp[:n_data_size]
+        mlp_neuron_proj_experiment(model, three_paren_neurons, three_paren_data, neuron_result_dir, n_paren=3)
+
+        four_paren_data_tmp = one_paren_data + two_paren_data + three_paren_data
+        random.shuffle(four_paren_data_tmp)
+        four_paren_data = four_paren_data + four_paren_data_tmp[:n_data_size]
+        mlp_neuron_proj_experiment(model, four_paren_neurons, four_paren_data, neuron_result_dir, n_paren=4)
+
+
+
+
+
+        # # Attention
+        # HEADS = [(layer, head) for layer in range(model.cfg.n_layers) for head in range(model.cfg.n_heads)]
+        # start_time = time.time()
+        # for n in tqdm(range(n_paren)): 
+        #     last_data_path = f"{data_dir}/train_labeled_last_paren_{n}.json"
+        #     last_results_path = f"{results_dir}/last_paren/"
+        #     create_results_dir(last_results_path)
+
+        #     last_results_path_attn = f"{last_results_path}/attn"
+        #     create_results_dir(last_results_path_attn)
+        #     # attn_proj_experiment(model, last_data_path, HEADS, n, results_path=last_results_path)
+        #     clear_cache()
+        # print(f"Time taken: {time.time() - start_time}")
 
 
 if __name__ == "__main__":

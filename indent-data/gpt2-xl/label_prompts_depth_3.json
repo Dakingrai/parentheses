@@ -1,0 +1,1502 @@
+[
+    {
+        "clean": "k=344\nif k == 2:\n    if k == 2:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=598\nif k == 2:\n    try:\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=216\nif k == 2:\n    while k < 2:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=485\nif k == 2:\n    if k<3:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=983\nif k<3:\n    my_function():\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=23\nfor i in range(10):\n    if k == 2:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=593\nmy_function():\n    my_function():\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=920\nwhile k>5:\n    my_function():\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=567\nmy_function():\n    while k>5:\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=61\nfor i in range(1, 15):\n    if k<3:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=367\nif k<3:\n    if k == 2:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=340\nfor i in range(10):\n    for i in range(10):\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=361\nfor i in range(10):\n    if k<3:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=928\nif k == 2:\n    while k < 2:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=800\nmy_function():\n    my_function():\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=606\nif k<3:\n    for i in range(10):\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=381\nfor i in range(10):\n    if k<3:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=430\ntry:\n    while k < 2:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=600\nwhile k>5:\n    try:\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=310\nif k<3:\n    try:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=122\nif k == 2:\n    for i in range(1, 15):\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=163\nif k == 2:\n    if k == 2:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=904\nwhile k>5:\n    my_function():\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=359\nfor i in range(1, 15):\n    if k == 2:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=897\nfor i in range(10):\n    my_function():\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=762\ntry:\n    if k<3:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=613\ntry:\n    while k>5:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=255\nmy_function():\n    while k < 2:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=532\nmy_function():\n    if k == 2:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=525\nif k == 2:\n    try:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=65\nfor i in range(1, 15):\n    for i in range(1, 15):\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=485\nfor i in range(1, 15):\n    for i in range(10):\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=413\nfor i in range(1, 15):\n    if k == 2:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=168\nif k == 2:\n    while k>5:\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=950\nfor i in range(1, 15):\n    for i in range(10):\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=271\nif k<3:\n    if k == 2:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=912\nmy_function():\n    my_function():\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=452\nfor i in range(1, 15):\n    my_function():\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=408\nif k == 2:\n    for i in range(10):\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=519\nwhile k>5:\n    while k < 2:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=388\nwhile k>5:\n    while k>5:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=684\nfor i in range(1, 15):\n    for i in range(10):\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=907\nfor i in range(1, 15):\n    for i in range(1, 15):\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=802\nif k<3:\n    try:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=825\nfor i in range(10):\n    if k<3:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=995\nwhile k>5:\n    if k == 2:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=457\ntry:\n    my_function():\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=343\ntry:\n    if k<3:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=637\ntry:\n    try:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=448\nif k<3:\n    my_function():\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=919\nfor i in range(10):\n    while k < 2:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=509\nwhile k>5:\n    if k == 2:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=266\nmy_function():\n    if k == 2:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=804\nfor i in range(1, 15):\n    while k < 2:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=893\nwhile k>5:\n    try:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=538\nwhile k < 2:\n    if k == 2:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=569\nwhile k < 2:\n    my_function():\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=613\nif k == 2:\n    for i in range(10):\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=350\nfor i in range(1, 15):\n    if k == 2:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=793\ntry:\n    for i in range(1, 15):\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=673\nfor i in range(10):\n    for i in range(1, 15):\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=666\nmy_function():\n    for i in range(1, 15):\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=68\nfor i in range(1, 15):\n    if k<3:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=842\nwhile k>5:\n    if k == 2:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=330\nwhile k>5:\n    if k == 2:\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=623\nif k<3:\n    for i in range(1, 15):\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=362\nif k<3:\n    while k < 2:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=902\nfor i in range(1, 15):\n    for i in range(1, 15):\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=975\ntry:\n    for i in range(1, 15):\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=798\nif k<3:\n    while k>5:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=996\nif k == 2:\n    for i in range(10):\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=676\nmy_function():\n    try:\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=658\nif k<3:\n    while k>5:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=631\nif k<3:\n    if k<3:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=438\nfor i in range(1, 15):\n    my_function():\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=780\nwhile k>5:\n    while k>5:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=346\nmy_function():\n    my_function():\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=811\ntry:\n    if k<3:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=122\nwhile k < 2:\n    while k < 2:\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=19\nif k == 2:\n    while k < 2:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=580\nmy_function():\n    while k < 2:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=888\ntry:\n    for i in range(10):\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=277\nwhile k>5:\n    if k == 2:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=743\nwhile k < 2:\n    while k < 2:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=587\nif k<3:\n    if k<3:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=290\nwhile k < 2:\n    for i in range(10):\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=474\ntry:\n    my_function():\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=755\nwhile k < 2:\n    try:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=298\nmy_function():\n    while k>5:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=980\nwhile k>5:\n    for i in range(10):\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=378\nfor i in range(1, 15):\n    if k == 2:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=702\nif k == 2:\n    for i in range(10):\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=536\nif k == 2:\n    for i in range(10):\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=431\nif k == 2:\n    while k < 2:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=473\nif k == 2:\n    for i in range(1, 15):\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=178\nfor i in range(1, 15):\n    try:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=912\nif k == 2:\n    if k == 2:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=855\nif k<3:\n    my_function():\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=695\nwhile k < 2:\n    my_function():\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=356\nmy_function():\n    for i in range(1, 15):\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=334\ntry:\n    while k < 2:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=557\nif k<3:\n    if k == 2:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=379\ntry:\n    if k == 2:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=441\ntry:\n    while k>5:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=459\nif k<3:\n    my_function():\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=433\nfor i in range(10):\n    if k<3:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=731\nmy_function():\n    my_function():\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=914\nwhile k>5:\n    if k == 2:\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=1\nfor i in range(1, 15):\n    if k<3:\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=568\nif k<3:\n    for i in range(10):\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=608\nfor i in range(1, 15):\n    if k<3:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=236\nwhile k>5:\n    while k>5:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=82\nfor i in range(10):\n    for i in range(1, 15):\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=691\nmy_function():\n    while k < 2:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=519\nif k == 2:\n    for i in range(1, 15):\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=429\ntry:\n    if k<3:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=139\nfor i in range(1, 15):\n    my_function():\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=416\nfor i in range(1, 15):\n    while k < 2:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=394\nwhile k>5:\n    if k == 2:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=364\nwhile k < 2:\n    if k<3:\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=480\nmy_function():\n    if k<3:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=600\nfor i in range(1, 15):\n    while k < 2:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=597\nfor i in range(10):\n    while k < 2:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=227\nif k<3:\n    for i in range(10):\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=504\nmy_function():\n    my_function():\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=887\nfor i in range(1, 15):\n    for i in range(1, 15):\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=511\nwhile k < 2:\n    if k<3:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=39\nmy_function():\n    my_function():\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=486\nfor i in range(10):\n    while k>5:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=552\nwhile k < 2:\n    for i in range(1, 15):\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=948\nif k<3:\n    while k>5:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=459\nmy_function():\n    my_function():\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=484\nif k == 2:\n    for i in range(10):\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=467\nfor i in range(1, 15):\n    while k < 2:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=779\nmy_function():\n    for i in range(10):\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=921\nwhile k < 2:\n    my_function():\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=942\nwhile k < 2:\n    my_function():\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=241\nfor i in range(10):\n    while k>5:\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=82\nif k == 2:\n    while k>5:\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=75\nwhile k>5:\n    for i in range(10):\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=959\nmy_function():\n    if k == 2:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=211\nmy_function():\n    while k>5:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=453\nif k<3:\n    for i in range(10):\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=134\ntry:\n    if k == 2:\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=663\nwhile k>5:\n    for i in range(1, 15):\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=73\ntry:\n    if k<3:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=369\nif k == 2:\n    if k<3:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=683\nwhile k < 2:\n    for i in range(1, 15):\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=204\nmy_function():\n    my_function():\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=173\nmy_function():\n    try:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=165\nif k<3:\n    while k>5:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=623\nwhile k < 2:\n    my_function():\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=684\nif k == 2:\n    if k<3:\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=162\nwhile k < 2:\n    if k<3:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=252\nif k == 2:\n    my_function():\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=704\nwhile k < 2:\n    my_function():\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=472\nfor i in range(1, 15):\n    while k < 2:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=944\nwhile k>5:\n    for i in range(1, 15):\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=590\nwhile k < 2:\n    my_function():\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=383\nmy_function():\n    try:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=225\nwhile k < 2:\n    for i in range(10):\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=584\nif k<3:\n    while k < 2:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=673\nif k == 2:\n    if k<3:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=125\nfor i in range(1, 15):\n    try:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=768\nwhile k>5:\n    for i in range(10):\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=238\nfor i in range(10):\n    for i in range(1, 15):\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=899\nmy_function():\n    while k < 2:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=227\nmy_function():\n    if k<3:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=187\nfor i in range(10):\n    my_function():\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=105\nif k<3:\n    if k == 2:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=325\nfor i in range(1, 15):\n    try:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=19\nwhile k < 2:\n    for i in range(1, 15):\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=50\nwhile k>5:\n    my_function():\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=859\nif k == 2:\n    for i in range(1, 15):\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=537\ntry:\n    for i in range(10):\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=869\nfor i in range(10):\n    my_function():\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=568\nif k == 2:\n    if k<3:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=164\nwhile k < 2:\n    if k == 2:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=949\nif k == 2:\n    try:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=423\nfor i in range(1, 15):\n    my_function():\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=385\nfor i in range(10):\n    for i in range(1, 15):\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=342\nfor i in range(1, 15):\n    while k < 2:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=727\nif k<3:\n    my_function():\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=428\nfor i in range(10):\n    while k>5:\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=614\nmy_function():\n    for i in range(1, 15):\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=473\nmy_function():\n    my_function():\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=320\nwhile k>5:\n    if k == 2:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=122\nwhile k>5:\n    while k>5:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=486\nfor i in range(1, 15):\n    for i in range(1, 15):\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=2\nif k == 2:\n    my_function():\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=100\nfor i in range(1, 15):\n    try:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=788\ntry:\n    my_function():\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=493\nmy_function():\n    for i in range(1, 15):\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=813\nwhile k>5:\n    if k == 2:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=47\nfor i in range(10):\n    if k == 2:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=754\nif k == 2:\n    for i in range(10):\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=650\nwhile k>5:\n    if k == 2:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=695\nwhile k>5:\n    while k < 2:\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=681\nfor i in range(10):\n    if k<3:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=704\nmy_function():\n    while k < 2:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=345\ntry:\n    while k>5:\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=226\nwhile k>5:\n    if k == 2:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=974\nwhile k>5:\n    try:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=410\nfor i in range(1, 15):\n    for i in range(1, 15):\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=669\ntry:\n    if k<3:\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=492\nif k == 2:\n    while k < 2:\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=331\nwhile k>5:\n    try:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=821\nwhile k < 2:\n    my_function():\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=233\nmy_function():\n    my_function():\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=446\nmy_function():\n    my_function():\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=977\nmy_function():\n    for i in range(10):\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=246\ntry:\n    if k<3:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=691\nfor i in range(10):\n    if k == 2:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=958\nif k<3:\n    if k<3:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=130\nif k<3:\n    for i in range(10):\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=923\nwhile k < 2:\n    while k < 2:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=900\nfor i in range(10):\n    try:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=542\nfor i in range(1, 15):\n    while k < 2:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=206\nfor i in range(1, 15):\n    while k>5:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=150\ntry:\n    my_function():\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=895\nfor i in range(10):\n    if k == 2:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=188\nfor i in range(1, 15):\n    if k == 2:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=752\ntry:\n    while k < 2:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=519\nfor i in range(10):\n    while k>5:\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=263\nmy_function():\n    for i in range(1, 15):\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=230\nmy_function():\n    while k>5:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=359\nif k<3:\n    try:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=626\nmy_function():\n    if k == 2:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=58\nif k == 2:\n    try:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=445\nwhile k>5:\n    if k<3:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=216\nwhile k>5:\n    while k < 2:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=227\nfor i in range(10):\n    my_function():\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=831\nwhile k < 2:\n    try:\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=577\nmy_function():\n    for i in range(10):\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=771\nif k<3:\n    my_function():\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=160\nmy_function():\n    for i in range(1, 15):\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=670\nmy_function():\n    if k<3:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=393\nif k<3:\n    for i in range(1, 15):\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=474\nmy_function():\n    while k < 2:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=962\nif k<3:\n    my_function():\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=46\nfor i in range(1, 15):\n    for i in range(1, 15):\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=43\nif k == 2:\n    while k < 2:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=503\nwhile k>5:\n    for i in range(10):\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=702\nif k == 2:\n    while k < 2:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=57\nmy_function():\n    while k < 2:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=503\nmy_function():\n    while k>5:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=638\nwhile k < 2:\n    while k>5:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=514\nif k == 2:\n    while k>5:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=229\nwhile k>5:\n    if k == 2:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=477\nwhile k>5:\n    if k == 2:\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=661\nif k<3:\n    if k == 2:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=966\nfor i in range(1, 15):\n    for i in range(10):\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=541\nwhile k < 2:\n    while k < 2:\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=169\nfor i in range(1, 15):\n    try:\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=909\nfor i in range(1, 15):\n    try:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=690\nif k == 2:\n    if k<3:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=281\nwhile k>5:\n    for i in range(1, 15):\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=131\nmy_function():\n    if k<3:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=813\nfor i in range(1, 15):\n    while k < 2:\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=455\nfor i in range(10):\n    while k < 2:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=165\nmy_function():\n    if k<3:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=773\ntry:\n    for i in range(1, 15):\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=764\nfor i in range(10):\n    try:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=986\nwhile k>5:\n    for i in range(1, 15):\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=508\nwhile k>5:\n    while k>5:\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=262\nmy_function():\n    if k == 2:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=18\nfor i in range(1, 15):\n    if k == 2:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=542\nfor i in range(1, 15):\n    my_function():\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=689\nwhile k < 2:\n    while k>5:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=506\nif k == 2:\n    if k<3:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=524\nwhile k < 2:\n    my_function():\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=236\nwhile k>5:\n    try:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=985\nmy_function():\n    try:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=640\ntry:\n    if k<3:\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=295\nwhile k>5:\n    for i in range(1, 15):\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=513\nwhile k < 2:\n    if k<3:\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=687\nwhile k < 2:\n    if k<3:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=895\nif k == 2:\n    if k<3:\n        my_function():\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=759\nif k == 2:\n    try:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=355\nif k<3:\n    for i in range(10):\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=954\nif k<3:\n    my_function():\n        while k>5:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=788\nfor i in range(10):\n    while k < 2:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=225\nfor i in range(1, 15):\n    if k == 2:\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=720\nwhile k < 2:\n    if k == 2:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=588\nfor i in range(1, 15):\n    try:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=714\nfor i in range(1, 15):\n    for i in range(10):\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=567\ntry:\n    my_function():\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=723\nfor i in range(10):\n    if k == 2:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=243\nwhile k>5:\n    while k < 2:\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=430\nif k<3:\n    try:\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=144\nmy_function():\n    if k<3:\n        if k<3:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=552\nwhile k < 2:\n    if k == 2:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=676\nif k<3:\n    while k>5:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=273\nwhile k < 2:\n    try:\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=103\nfor i in range(1, 15):\n    try:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=641\nif k<3:\n    while k < 2:\n        for i in range(1, 15):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=297\nwhile k < 2:\n    for i in range(10):\n        for i in range(10):\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=803\nif k == 2:\n    try:\n        try:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=427\nmy_function():\n    while k>5:\n        if k == 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    },
+    {
+        "clean": "k=44\nif k<3:\n    try:\n        while k < 2:\n           ",
+        "correct_idx": 220,
+        "clean_label": " "
+    }
+]

@@ -1,0 +1,2105 @@
+{
+    "accuracy": 1.0,
+    "prompt_results": [
+        {
+            "prompt": "k=992\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=115\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=587\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=903\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=902\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=188\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=196\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=397\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=423\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=625\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=508\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=995\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=184\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=321\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=148\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=38\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=450\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=688\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=729\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=340\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=396\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=799\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=249\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=495\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=307\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=688\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=762\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=909\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=594\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=317\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=825\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=610\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=360\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=449\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=479\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=659\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=259\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=131\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=267\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=786\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=913\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=378\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=639\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=908\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=648\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=853\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=134\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=754\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=258\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=814\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=639\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=784\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=9\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=731\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=3\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=905\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=413\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=219\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=64\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=543\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=547\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=44\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=650\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=457\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=99\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=898\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=535\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=785\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=653\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=917\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=29\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=462\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=309\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=652\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=721\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=440\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=992\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=99\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=507\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=357\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=344\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=547\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=172\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=52\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=174\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=407\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=294\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=108\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=360\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=901\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=379\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=446\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=666\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=97\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=335\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=554\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=892\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=152\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=726\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=55\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=428\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=870\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=546\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=252\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=220\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=730\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=300\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=292\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=828\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=379\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=511\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=803\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=557\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=330\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=734\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=924\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=561\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=23\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=486\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=409\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=113\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=927\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=225\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=287\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=556\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=4\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=729\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=664\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=55\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=720\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=788\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=731\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=782\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=917\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=71\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=357\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=531\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=11\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=431\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=785\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=531\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=814\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=488\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=865\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=497\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=432\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=121\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=169\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=865\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=807\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=491\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=811\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=36\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=978\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=106\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=571\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=294\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=679\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=430\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=533\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=621\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=168\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=13\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=127\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=244\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=212\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=378\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=328\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=473\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=8\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=140\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=141\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=525\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=321\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=522\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=545\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=449\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=518\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=341\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=815\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=960\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=485\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=380\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=640\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=358\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=196\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=197\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=971\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=754\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=243\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=297\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=288\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=141\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=131\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=214\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=146\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=943\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=676\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=580\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=431\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=361\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=291\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=238\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=430\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=289\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=20\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=294\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=34\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=225\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=818\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=7\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=771\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=969\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=227\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=314\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=434\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=266\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=772\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=467\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=407\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=639\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=326\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=765\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=767\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=463\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=875\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=439\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=358\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=625\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=619\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=569\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=781\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=820\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=833\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=95\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=305\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=803\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=896\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=297\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=600\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=714\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=207\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=539\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=309\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=466\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=650\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=179\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=14\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=586\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=814\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=607\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=146\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=570\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=497\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=289\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=759\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=858\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=861\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=44\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=810\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=687\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=848\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=12\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=875\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=367\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=183\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=385\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=603\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=797\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=223\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=338\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=504\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=55\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=286\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=169\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=695\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=677\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=549\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=300\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=444\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=756\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=58\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=639\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=918\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=702\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=396\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=950\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=280\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=169\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=634\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=645\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=878\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=321\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=638\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=565\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=787\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=211\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=968\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=348\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=130\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=608\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=505\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=883\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=276\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=507\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=616\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=624\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=202\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=258\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=351\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=3\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=760\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=509\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=120\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=434\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=749\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=155\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=454\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=237\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=629\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=34\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=715\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=254\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=552\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=155\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=684\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=609\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=636\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=689\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=926\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=533\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=952\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=989\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=454\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=996\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=545\nif k == 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=449\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=65\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=64\nwhile k < 2:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=516\nfor i in range(10):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=329\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=398\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=172\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=390\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=256\ntry:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=450\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=43\nfor i in range(1, 15):\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=58\nwhile k>5:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=86\nif k<3:\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        },
+        {
+            "prompt": "k=866\nmy_function():\n",
+            "label": "  ",
+            "pred": "  ",
+            "correct": true
+        }
+    ]
+}

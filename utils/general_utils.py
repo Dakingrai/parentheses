@@ -94,6 +94,27 @@ class MyDataset(Dataset):
     def to_dataloader(self, batch_size: int):
         return DataLoader(self, batch_size=batch_size, collate_fn=collate_data)
 
+class MyDatasetV2(Dataset):
+    def __init__(self, data):
+        self.df = pd.DataFrame(data)
+
+    def __len__(self):
+        return len(self.df)
+    
+    def shuffle(self):
+        self.df = self.df.sample(frac=1)
+
+    def head(self, n: int):
+        self.df = self.df.head(n)
+    
+    def __getitem__(self, index):
+        row = self.df.iloc[index]
+        # correct_idx and incorrect_idx are the token_ids
+        return row['prompt'], row['label_idx']
+    
+    def to_dataloader(self, batch_size: int):
+        return DataLoader(self, batch_size=batch_size, collate_fn=collate_data)
+
 # def load_data(data_path: str):
 #     """
 #     Function to load the data

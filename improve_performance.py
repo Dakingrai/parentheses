@@ -13,24 +13,6 @@ from utils.general_utils import MyDataset, load_model
 from activation_patching import InterveneOV, InterveneNeurons
 
 
-# # Constants
-# MODEL_NAME = "codellama/CodeLlama-7b-hf"
-# CACHE_DIR = "../../../projects/ziyuyao/models/codellama/"
-
-# MODEL_NAME = "meta-llama/Llama-2-7b"
-# CACHE_DIR = "../../../projects/ziyuyao/models/Llama-2-7b/"
-
-
-# Constants
-# MODEL_NAME = "gpt2-small"
-# CACHE_DIR = "../../../models/gpt2-small"
-
-# MODEL_NAME = "gpt2-medium"
-# CACHE_DIR = "../../../models/gpt2-medium"
-
-# MODEL_NAME = "EleutherAI/pythia-6.9b"
-# CACHE_DIR = "../../../projects/ziyuyao/models/pythia-6.9b"
-
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def save_file(data, file_name):
@@ -149,18 +131,50 @@ def create_results_dir(results_path):
     if not os.path.exists(results_path):
         os.makedirs(results_path)
 
+def get_heads_V2(model, attn_results_path):
+    # rank the heads by global macro-f1-score
+    attn_results = read_json(f"{attn_results_path}/head_results.json")
+    heads = [(layer, head) for layer in range(model.cfg.n_layers) for head in range(model.cfg.n_heads)]
 
+    correct_heads = {
+        f"{n}-general": [] for n in range(1, 5)
+    }
+    correct_heads.update({
+        f"{n}-general-sorted": [] for n in range(1, 5)
+    })
 
+    for n in range(1, 5):
+        general_label = f"{n}-general"
+        general_sorted_label = f"{n}-general-sorted"
+
+        for layer, head in heads:
+            key = f"L{layer}_H{head}"
+            data = attn_results.get(key, {}).get("global", {})
+
+            if data.get("n_generalized_subtasks") == n and data.get("macro_f1") is not None:
+                correct_heads[general_label].append((layer, head))
+
+        # Sort by macro F1
+        correct_heads[general_sorted_label] = sorted(
+            correct_heads[general_label],
+            key=lambda x: attn_results[f"L{x[0]}_H{x[1]}"]["global"]["macro_f1"],
+            reverse=True
+        )
+
+    return correct_heads
+
+        
 def attention_intervention(model, attn_results_path, data_dir, results_dir, n_paren=4):
-    HEADS = get_heads(model, attn_results_path)
+    ALL_HEADS = get_heads_V2(model, attn_results_path)
+    pdb.set_trace()
     # HEADS = list(set(HEADS["4-general"] + HEADS["3-general"] + HEADS["2-general"])) 
     # HEADS = list(set(HEADS["1-general"]))
-    n_heads = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
-    for n_head in tqdm(n_heads): 
-        HEADS = list(set(HEADS["1-general-sorted"][:n_head] + HEADS["3-general-sorted"] + HEADS["2-general-sorted"]))
-        HEADS = [(layer, head) for layer, head, value in HEADS]
+    # n_heads = [0, 5, 10, 20, 30,  40,  50, 60, 0.8*len(ALL_HEADS), len(ALL_HEADS)]
+    n_heads = [int(0.8*len(ALL_HEADS)), len(ALL_HEADS)]
+    for n_head in tqdm(n_heads):
+        HEADS = list(set(ALL_HEADS["4-general-sorted"] + ALL_HEADS["3-general-sorted"] + ALL_HEADS["2-general-sorted"] + ALL_HEADS["1-general-sorted"]))[:n_head]
         print(f"Number of heads: {len(HEADS)}")
-
+    
         coeffs = [1.1, 1.2, 1.25, 1.3, 1.35, 1.4, 1.45, 1.5, 1.55, 1.6]
         for c in tqdm(coeffs):
             for n in range(n_paren):
@@ -209,15 +223,28 @@ def get_intervene_neurons(mlp_results_path, n_paren=4):
     for n in range(n_paren):
         neurons = read_json(f"{mlp_results_path}/{n}_neuron_acc.json")
         for n in neurons:
-            if n["accuracy"] > 0.8:
+            if n["accuracy"] > 0.8 and n["incorrect_accuracy"]< 0.5:
                 paren_neurons.append(n["neuron"])
     return paren_neurons
 
 
+def get_intervene_neurons_V2(mlp_results_path, n_paren=4):
+    paren_neurons = []
+    for n in range(1, n_paren+1):
+        neurons = read_json(f"{mlp_results_path}/{n}_neuron_acc.json")
+        paren_neurons += neurons
+    
+    # sort the neurons by f1-score
+    paren_neurons.sort(key=lambda x: x["f1_score"], reverse=True)
+    paren_neuron_names = [p['neuron'] for p in paren_neurons if p["f1_score"] > 0.1]
+
+    return paren_neuron_names
+
+
 def mlp_intervention(model, mlp_results_path, data_dir, results_dir, n_paren=4):
-    intervene_neurons = get_intervene_neurons(mlp_results_path, n_paren=n_paren)
+    intervene_neurons = get_intervene_neurons_V2(mlp_results_path, n_paren=n_paren)
     print(f"Number of neurons: {len(intervene_neurons)}")
-    coeffs = [1.05, 1.1, 1.15, 1.2, 1.25, 1.3, 1.35, 1.4, 1.45, 1.5]
+    coeffs = [1.15, 1.2, 1.25, 1.3, 1.35, 1.4, 1.45, 1.5, 1.55, 1.6]
     for c in tqdm(coeffs):
         for n in range(n_paren):
             results = {}
@@ -262,17 +289,18 @@ def mlp_intervention(model, mlp_results_path, data_dir, results_dir, n_paren=4):
 
 def main():
     models = read_json("utils/models.json")
-    models = models
+    models = models[-3:]
     n_paren = 4 # Number of parentheses to consider
     for model in models:
         model_name = model["name"]
+        print(f"Model name: {model_name}")
         cache_dir = model["cache"]
         folder_name = model["name"].split("/")[-1]
         data_dir = f"data/{folder_name}"
-        attn_results_path = f"results/proj_experiment/projections/{folder_name}/last_paren"
+        attn_results_path = f"results/proj_experiment/projections/{folder_name}/V2/attn/proj/head_results"
         mlp_results_path = f"results/proj_experiment/projections/{folder_name}/last_paren/neurons"
 
-        results_dir = f"results/proj_experiment/improve_performance/{folder_name}"
+        results_dir = f"results/proj_experiment/improve_performance/V2/{folder_name}"
         create_results_dir(results_dir)
 
         model = load_model(model_name, cache_dir)
