@@ -1,13 +1,22 @@
+from human_eval.data import write_jsonl, read_problems
 import torch
-import json
+from transformers import AutoModelForCausalLM, AutoTokenizer
 from tqdm import tqdm
-from transformer_lens import HookedTransformer
 import pdb
-from transformers import AutoTokenizer, AutoModelForCausalLM
+import json
+from transformer_lens import HookedTransformer
 import os
 import gc
 from collections import defaultdict
 import time
+import json
+
+# Load necessary utilities
+from utils.general_utils import MyDataset, load_model
+from activation_patching import InterveneOV, InterveneNeurons, InterveneOV_HF
+
+
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Load necessary utilities
 from utils.general_utils import MyDataset, load_model
@@ -146,7 +155,7 @@ def attention_intervention(model, attn_results_path, data_dir, results_dir, n_pa
         else:
             coeffs = [1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0]
         for c in tqdm(coeffs):
-            for n in n_paren[4:]:
+            for n in range(n_paren):
                 results = {}
                 last_data_path = f"{data_dir}/test_labeled_last_paren_{n}.json"
                 last_results_path = f"{results_dir}/last_paren/new"
@@ -158,7 +167,7 @@ def attention_intervention(model, attn_results_path, data_dir, results_dir, n_pa
                 for each in data:
                     total += 1
                     tmp = {}
-                    with InterveneOV(model, intervene_heads=HEADS, coeff = c):
+                    with InterveneOV_HF(model, intervene_heads=HEADS, coeff = c):
                         logits = model(each["prompt"], return_type="logits")
                     l = logits.argmax(dim=-1).squeeze()[-1]
                     pred = model.to_string(l)
@@ -183,32 +192,67 @@ def attention_intervention(model, attn_results_path, data_dir, results_dir, n_pa
     del model, data, results
     clear_cache()
 
+def fix_indents(text: str) -> str:
+    return text.replace("\t", "    ")
+
+def filter_code(completion: str) -> str:
+    # The program tends to overwrite, we only take the first function
+    completion = completion.lstrip("\n")
+    return completion.split("\n\n")[0]
+
+def generate_one_completion(prompt, model, HEADS, coeff):
+    # Add a prefix to the prompt
+    prompt = prompt.replace("    ", "\t") # with this the accuracy was updated from 0.0548 to 0.292
+    toks = model.to_tokens(prompt)
+    with torch.no_grad():
+        with InterveneOV(model, intervene_heads=HEADS, coeff = coeff):
+            outputs = model.generate(
+                toks,
+                max_new_tokens=512,  # Increased for complex functions
+                do_sample=False,       # Enable sampling
+                temperature=0.0,      # this increased accuracy from 0.292 to 0.329
+            )
+    # Decode the output tokens
+    input_ids_cutoff = toks.size(dim=1)
+    generated_output = outputs[:, input_ids_cutoff:]
+    generated_code = model.to_string(generated_output[0])
+    filtered_code = filter_code(fix_indents(generated_code)) # with this the accuracy was updated from 0.01 to 0.0548
+    return filtered_code
+
 
 def main():
+    problems = read_problems()
+    num_samples_per_task = 1
     models = read_json("utils/models.json")
-    n_paren = [0, 1, 2, 3, 4, 5, 6]
+    models = models[2:]
     for model in models:
+        print(f"Running experiments for {model['name']}")
         model_name = model["name"]
-        print(f"Model name: {model_name}")
         cache_dir = model["cache"]
         folder_name = model["name"].split("/")[-1]
-        data_dir = f"data/{folder_name}"
+        results_dir = f"results/human_evals/{folder_name}"
         attn_results_path = f"results/proj_experiment/attn_results/{folder_name}/final_v"
-
-        results_dir = f"results/proj_experiment/improve_performance/final_v/{folder_name}/attn"
         create_results_dir(results_dir)
-
         model = load_model(model_name, cache_dir)
-        
-        attention_intervention(model, attn_results_path, data_dir, results_dir, n_paren=n_paren, metric="f1-score")
 
-        # attention_intervention(model, attn_results_path, data_dir, results_dir, n_paren=n_paren, metric="precision")
+        ALL_HEADS = get_heads(attn_results_path, metric="f1-score")
+        print(f"Number of heads: {len(ALL_HEADS)}")
+        n_heads = [0, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, int(0.8*len(ALL_HEADS)), len(ALL_HEADS)]
 
-        # attention_intervention(model, attn_results_path, data_dir, results_dir, n_paren=n_paren, metric="recall")
+        for n_head in tqdm(n_heads):
+            HEADS = ALL_HEADS[:n_head]
+            if n_head == 0:
+                coeffs = [1]
+            else:
+                coeffs = [1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0]
+            for c in tqdm(coeffs):
+                samples = [
+                    dict(task_id=task_id, completion=generate_one_completion(problems[task_id]["prompt"], model, HEADS, c))
+                    for task_id in tqdm(problems)
+                    for _ in range(num_samples_per_task)
+                ]
 
-        del model
-        clear_cache()
-
+                write_jsonl(f"{results_dir}/samples-head-{n_head}-coeff-{c}.jsonl", samples)
 
 if __name__ == "__main__":
     main()

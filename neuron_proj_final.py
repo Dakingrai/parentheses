@@ -90,7 +90,8 @@ def filter_neurons(W2: torch.Tensor, W_U: torch.Tensor, paren_token_ids: list[in
     Returns:
         List[Dict]: Metadata for each neuron that promotes at least one paren token.
     """
-    neuron_logits = W2 @ W_U  # shape: [d_mlp, vocab_size]
+    with torch.no_grad():
+        neuron_logits = W2 @ W_U  # shape: [d_mlp, vocab_size]
     selected_neurons = []
 
     for neuron_idx in range(W2.shape[0]):
@@ -115,6 +116,58 @@ def filter_neurons(W2: torch.Tensor, W_U: torch.Tensor, paren_token_ids: list[in
 
     return selected_neurons
 
+def filter_neurons_v2(W2: torch.Tensor, W_U: torch.Tensor, paren_token_ids: list[int], layer: int, top_k: int = 50):
+    """
+    Filters and labels neurons that promote or suppress paren tokens
+    based on whether they fall in top-k or bottom-k logits.
+
+    Args:
+        W2 (torch.Tensor): Second FF layer weight matrix, shape [d_mlp, d_model]
+        W_U (torch.Tensor): Unembedding matrix, shape [d_model, vocab_size]
+        paren_token_ids (list[int]): Token IDs for closing parens: ")", "))", etc.
+        layer (int): The layer index (for metadata)
+        top_k (int): Number of top/bottom logits to consider (default = 100)
+
+    Returns:
+        List[Dict]: Metadata for each neuron that promotes or suppresses a paren token.
+    """
+    with torch.no_grad():
+        neuron_logits = W2 @ W_U  # shape: [d_mlp, vocab_size]
+
+    selected_neurons = []
+
+    for neuron_idx in range(W2.shape[0]):
+        logit_vec = neuron_logits[neuron_idx]
+        sorted_indices = torch.argsort(logit_vec, descending=True)
+
+        top_tokens = set(sorted_indices[:top_k].tolist())
+        bottom_tokens = set(sorted_indices[-top_k:].tolist())
+
+        promoted_tokens = [tok for tok in paren_token_ids if tok in top_tokens]
+        suppressed_tokens = [tok for tok in paren_token_ids if tok in bottom_tokens]
+
+        if promoted_tokens or suppressed_tokens:
+            selected_neurons.append({
+                "neuron_idx": neuron_idx,
+                "layer": layer,
+                "paren_token_ranks": {
+                    tok: (logit_vec >= logit_vec[tok]).sum().item()
+                    for tok in paren_token_ids
+                },
+                "paren_logits": {
+                    tok: logit_vec[tok].item()
+                    for tok in paren_token_ids
+                },
+                "status": (
+                    "promoter" if promoted_tokens else "suppressor"
+                    if suppressed_tokens else "both"
+                ),
+                "promoted_tokens": promoted_tokens,
+                "suppressed_tokens": suppressed_tokens
+            })
+
+    return selected_neurons
+
 def save_paren_neurons(model, results_path, paren_token_ids):
     """
     Efficiently identifies MLP neurons that project specific parentheses within a given rank threshold,
@@ -125,12 +178,12 @@ def save_paren_neurons(model, results_path, paren_token_ids):
     num_layers, num_neurons = model.W_out.shape[:2]
     paren_neurons = []
     for layer in tqdm(range(num_layers)):
-        paren_neurons.extend(filter_neurons(model.W_out[layer], model.W_U, paren_token_ids, layer, threshold=0.5))
+        paren_neurons.extend(filter_neurons_v2(model.W_out[layer], model.W_U, paren_token_ids, layer))
     
     save_file(paren_neurons, f"{results_path}/{model.cfg.model_name}_paren_neurons.json")
     clear_cache()
     torch.cuda.empty_cache()
-    time.sleep(0.1)  # Allow some time for the cache to clear
+    time.sleep(0.5)  # Allow some time for the cache to clear
     return paren_neurons
 
 def process_mlp_neuron(model, cache, clean_input, correct_idx, layer, neuron_idx, paren_token_ids):
@@ -176,6 +229,9 @@ def process_mlp_neuron(model, cache, clean_input, correct_idx, layer, neuron_idx
 
     results["head_l2_norm"] = torch.linalg.norm(neuron_contribution).item()
 
+    del cache
+    torch.cuda.empty_cache()
+    time.sleep(0.5)  # Allow some time for the cache to clear
     return results
 
 
@@ -200,6 +256,7 @@ def neuron_proj_experiment(model, data, neurons, paren_token_ids, results_path):
             # Store results in list
             all_results[f"L{layer}N{neuron_idx}"].append(results)
             # Update accuracy tracking
+            del results # Clear results to save memory
     
     for neuron in neurons:
         neuron_idx = neuron["neuron_idx"]
@@ -226,7 +283,7 @@ def main():
         cache_dir = model["cache"]
         folder_name = model["name"].split("/")[-1]
         data_dir = f"data/{folder_name}"
-        results_dir = f"results/proj_experiment/projections/{folder_name}/final_v/mlp"
+        results_dir = f"results/proj_experiment/projections/{folder_name}/final_v1/mlp"
         create_results_dir(results_dir)
         model = load_model(model_name, cache_dir)
 
@@ -234,7 +291,7 @@ def main():
         data = []
         for n in range(n_paren):
             data_path = f"{data_dir}/train_labeled_last_paren_{n}.json"
-            data += read_json(data_path)
+            data += read_json(data_path)[:50] # to reduce the time
         
         paren_token_ids = get_paren_logit_idx(folder_name)
         
@@ -248,7 +305,7 @@ def main():
         clear_cache()
         del model
         torch.cuda.empty_cache()
-        time.sleep(0.1)
+        time.sleep(0.5)
         
 
         

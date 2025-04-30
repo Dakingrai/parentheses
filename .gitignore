@@ -1,3 +1,5 @@
 data/
 results/
 myscript.slurm
+indent-results/
+indent-data/

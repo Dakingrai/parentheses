@@ -8,6 +8,7 @@ import os
 import gc
 from collections import defaultdict
 import time
+import matplotlib.pyplot as plt
 
 # Load necessary utilities
 from utils.general_utils import MyDataset, load_model
@@ -34,6 +35,15 @@ def clear_cache():
     torch.cuda.empty_cache()
     time.sleep(0.5)
 
+def parse_attn_name(name):
+    """
+    Parse the attention name to get the layer and head number.
+    """
+    name = name.split("L")
+    layer = int(name[1].split("_")[0])
+    head = name[1].split("_")[1]
+    head = int(head.split("H")[1])
+    return (layer, head)
 
 def get_heads(attn_results_path, metric = "f1-score", index = 0):
 
@@ -121,72 +131,105 @@ def get_heads(attn_results_path, metric = "f1-score", index = 0):
     
     return all_attns
 
-def parse_attn_name(name):
-    """
-    Parse the attention name to get the layer and head number.
-    """
-    name = name.split("L")
-    layer = int(name[1].split("_")[0])
-    head = name[1].split("_")[1]
-    head = int(head.split("H")[1])
-    return (layer, head)
+
+def load_general_heads(path: str) -> dict:
+    general_data = read_json(path)
+    general_groups = general_data.get("per_subtask_heads", {})
+
+    result = {}
+    result["all_heads"] = []
+    for level in ["1-paren", "2-paren", "3-paren", "4-paren"]:
+        result[level] = general_groups[level]
+        result["all_heads"].extend(general_groups[level])
+    
+    result["all_heads"] = list(set(result["all_heads"]))
+    return result
 
 
-def attention_intervention(model, attn_results_path, data_dir, results_dir, n_paren=4, metric="f1-score"):
-    results_dir = f"{results_dir}/{metric}"
-    create_results_dir(results_dir)
-    ALL_HEADS = get_heads(attn_results_path, metric=metric)
-    print(f"Number of heads: {len(ALL_HEADS)}")
-    n_heads = [0, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, int(0.8*len(ALL_HEADS)), len(ALL_HEADS)]
+def extract_scores(heads: list[str], head_attn: dict, metric: str) -> list[str]:
+    metric_map = {
+        "f1-score": "macro_f1",
+        "precision": "average_precision",
+        "recall": "average_recall"
+    }
 
-    for n_head in tqdm(n_heads):
-        HEADS = ALL_HEADS[:n_head]
-        if n_head == 0:
-            coeffs = [1]
-        else:
-            coeffs = [1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0]
-        for c in tqdm(coeffs):
-            for n in n_paren[4:]:
-                results = {}
-                last_data_path = f"{data_dir}/test_labeled_last_paren_{n}.json"
-                last_results_path = f"{results_dir}/last_paren/new"
-                create_results_dir(last_results_path)
-                data = read_json(last_data_path)
-                total = 0
-                correct = 0
-                detail_results = []
-                for each in data:
-                    total += 1
-                    tmp = {}
-                    with InterveneOV(model, intervene_heads=HEADS, coeff = c):
-                        logits = model(each["prompt"], return_type="logits")
-                    l = logits.argmax(dim=-1).squeeze()[-1]
-                    pred = model.to_string(l)
-                    # save data
-                    tmp['prompt'] = each["prompt"]
-                    tmp['label'] = each["label"]
-                    tmp['pred'] = pred
-                    if pred == each["label"]:
-                        tmp['correct'] = True
-                        correct += 1
-                    else:
-                        tmp['correct'] = False
-                    detail_results.append(tmp)
-                    gc.collect()
-                    torch.cuda.empty_cache()
-                results[f"accuracy"] = correct / total
-                results["detail_results"] = detail_results
-                save_file(results, f"{last_results_path}/subtask-{n}-coeff-{c}-heads-{n_head}.json")
+    if metric not in metric_map:
+        raise ValueError(f"Invalid metric: {metric}")
+    
+    metric_key = metric_map[metric]
+    scored_heads = [
+        (head, head_attn[head][metric_key][0]) for head in heads if head in head_attn
+    ]
+    
+    scored_heads.sort(key=lambda x: x[1], reverse=True)
+    return [head for head, _ in scored_heads]
 
-                print(f"results saved to {last_results_path}/subtask-{n}_coeff-{c}_heads-{n_head}.json")
-                # remove the cache and garbage collection
-    del model, data, results
-    clear_cache()
+def calculate_metrics(attns, attn_metrics):
+    precisions = []
+    recalls = []
+    f1_scores = []
+    for attn_name in attns:
+        precisions.append(attn_metrics[attn_name]["average_precision"][0])
+        recalls.append(attn_metrics[attn_name]["average_recall"][0])
+        f1_scores.append(attn_metrics[attn_name]["macro_f1"][0])
+    
 
+    results = {
+        "precisions": sorted(precisions, reverse=True),
+        "recalls": sorted(recalls, reverse=True),
+        "f1_scores": sorted(f1_scores, reverse=True)
+    }
+    return results
+
+def get_heads_v2(attn_results_path: str, results_path: str) -> list[tuple[int, int, int]]:
+    macro_metrics_path = f"{attn_results_path}/macro_metrics.json"
+    head_attn = read_json(macro_metrics_path)
+
+    # save the scores by subtask
+    head_generalization = load_general_heads(f"{attn_results_path}/head_generalization_0.json")
+    all_head_metric = calculate_metrics(head_generalization["all_heads"], head_attn)
+    one_paren_metric = calculate_metrics(head_generalization["1-paren"], head_attn)
+    two_paren_metric = calculate_metrics(head_generalization["2-paren"], head_attn)
+    three_paren_metric = calculate_metrics(head_generalization["3-paren"], head_attn)
+    four_paren_metric = calculate_metrics(head_generalization["4-paren"], head_attn)
+
+    
+
+    # Save the scores to a file
+    results = {
+        "all_heads": all_head_metric,
+        "1_paren": one_paren_metric,
+        "2_paren": two_paren_metric,
+        "3_paren": three_paren_metric,
+        "4_paren": four_paren_metric
+    }
+
+    
+    save_file(results, f"{results_path}/metric_scores.json")
+
+    return results
+
+def plot_figures(data, results_path: str):
+    # Define metrics and filenames
+    metrics = {
+        'precision': data['precisions'][:60],
+        'recall': data['recalls'][:60],
+        'f1_score': data['f1_scores'][:60]
+    }
+
+    for name, values in metrics.items():
+        plt.figure()
+        plt.hist(values, bins=30)
+        plt.title(f'{name.replace("_", " ").capitalize()} Distribution')
+        plt.xlabel(name.replace("_", " ").capitalize())
+        plt.ylabel('Frequency')
+        filename = f'{results_path}-{name}-60.png'
+        plt.savefig(filename)
+        
 
 def main():
     models = read_json("utils/models.json")
-    n_paren = [0, 1, 2, 3, 4, 5, 6]
+    n_paren = 4 # Number of parentheses to consider
     for model in models:
         model_name = model["name"]
         print(f"Model name: {model_name}")
@@ -195,16 +238,26 @@ def main():
         data_dir = f"data/{folder_name}"
         attn_results_path = f"results/proj_experiment/attn_results/{folder_name}/final_v"
 
-        results_dir = f"results/proj_experiment/improve_performance/final_v/{folder_name}/attn"
+        results_dir = f"results/proj_experiment/attn_results/{folder_name}/final_v"
         create_results_dir(results_dir)
 
-        model = load_model(model_name, cache_dir)
         
-        attention_intervention(model, attn_results_path, data_dir, results_dir, n_paren=n_paren, metric="f1-score")
+        heads_stat = get_heads_v2(attn_results_path, results_dir)
+        
+        result_name = f"{results_dir}/all"
+        plot_figures(heads_stat["all_heads"], result_name)
 
-        # attention_intervention(model, attn_results_path, data_dir, results_dir, n_paren=n_paren, metric="precision")
+        result_name = f"{results_dir}/1_paren"
+        plot_figures(heads_stat["1_paren"], result_name)
 
-        # attention_intervention(model, attn_results_path, data_dir, results_dir, n_paren=n_paren, metric="recall")
+        result_name = f"{results_dir}/2_paren"
+        plot_figures(heads_stat["2_paren"], result_name)
+
+        result_name = f"{results_dir}/3_paren"
+        plot_figures(heads_stat["3_paren"], result_name)
+
+        result_name = f"{results_dir}/4_paren"
+        plot_figures(heads_stat["4_paren"], result_name)
 
         del model
         clear_cache()

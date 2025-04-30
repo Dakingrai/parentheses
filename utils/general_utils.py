@@ -95,8 +95,10 @@ class MyDataset(Dataset):
         return DataLoader(self, batch_size=batch_size, collate_fn=collate_data)
 
 class MyDatasetV2(Dataset):
-    def __init__(self, data):
+    def __init__(self, data, num_samples=None):
         self.df = pd.DataFrame(data)
+        if num_samples is not None and num_samples > 0:
+            self.df = self.df.sample(n=num_samples, random_state=20)
 
     def __len__(self):
         return len(self.df)

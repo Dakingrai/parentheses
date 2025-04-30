@@ -17,7 +17,7 @@ from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_sc
 
 # Load necessary utilities
 from utils.general_utils import MyDataset, load_model
-from activation_patching import InterveneOV, InterveneNeurons
+from activation_patching import InterveneOV
 
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -49,6 +49,12 @@ def is_promoted(max_logit, logit, threshold):
     threshold = round(threshold, 4)
     max_logit = round(max_logit, 4)
     return logit >= threshold * max_logit
+
+def is_promoted_rank(ranks, threshold_rank=100):
+    """
+    Returns True if anyone of the rank is smaller threshold rank
+    """
+    return any(r < threshold_rank for r in ranks)
 
 def get_paren_logit_idx(model_name):
     data_dir = f"data/{model_name}/"
@@ -124,7 +130,8 @@ def calculate_precision_recall_f1(thresholds, precision_data, subtask_n_paren):
         label_n = entry["label"].count(")")
         label_logit = entry["paren_logits"].get(f"{label_n}-paren-logit", 0)
         for i, threshold in enumerate(thresholds):
-            activated = is_promoted(max_logit, label_logit, threshold)
+            # activated = is_promoted(max_logit, label_logit, threshold)
+            activated = is_promoted_rank(list(entry["paren_ranks"].values()), threshold_rank=100)
             if activated:
                 if label_n == subtask_n_paren:
                     true_positives[i] += 1
@@ -152,46 +159,6 @@ def calculate_precision_recall_f1(thresholds, precision_data, subtask_n_paren):
     return precision, recall, f1_scores, false_positive_rates
 
 
-def calculate_accuracy(thresholds, data, subtask_paren, paren_token_ids):
-    """
-    Calculates accuracy across thresholds where:
-    - The subtask paren is activated (using is_promoted).
-    - The subtask paren has the highest rank (i.e., lowest numerical rank) among all paren_token_ids.
-
-    Parameters:
-        thresholds (List[float])
-        data (List[Dict]): Each entry contains paren_logits, paren_ranks, etc.
-        subtask_paren (str): The string with parentheses (e.g., ')))')
-        paren_token_ids (List[int]): List of 1-paren to 4-paren token ids
-
-    Returns:
-        List[float]: Accuracy at each threshold
-    """
-    subtask_n = subtask_paren.count(")")
-    accuracy = [0] * len(thresholds)
-    n_total = [0] * len(thresholds)
-
-    for entry in data:
-        paren_logits = entry["paren_logits"]
-        paren_ranks = entry.get("paren_ranks", {})
-        max_logit = paren_logits["max-logit"]
-        subtask_logit = paren_logits.get(f"{subtask_n}-paren-logit", float("-inf"))
-        subtask_rank = paren_ranks.get(f"{subtask_n}-paren-rank", float("inf"))
-
-        # Get ranks of all parens
-        candidate_ranks = [
-            paren_ranks.get(f"{n}-paren-rank", float("inf")) for n in range(1, 5)
-        ]
-
-        min_rank = min(candidate_ranks)
-
-        for i, threshold in enumerate(thresholds):
-            if is_promoted(max_logit, subtask_logit, threshold):
-                n_total[i] += 1
-                if subtask_rank == min_rank:
-                    accuracy[i] += 1
-
-    return [accuracy[i] / n_total[i] if n_total[i] > 0 else 0 for i in range(len(thresholds))]
 
 
 def calculate_accuracy_and_confidence(thresholds, data, subtask_paren, paren_token_ids, use_second_highest=False):
@@ -238,7 +205,8 @@ def calculate_accuracy_and_confidence(thresholds, data, subtask_paren, paren_tok
         for i, threshold in enumerate(thresholds):
             # if is_promoted(max_logit, subtask_logit, threshold):
             n_total[i] += 1
-            if subtask_rank == min_rank:
+            # if subtask_rank == min_rank:
+            if subtask_rank == min_rank and min_rank <= 100:
                 accuracy[i] += 1
                 correct_confidences[i].append(confidence)
             else:
@@ -273,7 +241,6 @@ def process_attention_data(proj_results_path, result_path, thresholds, HEADS, su
         precision, recall, f1_scores, false_positive_rates = calculate_precision_recall_f1(thresholds, precision_data, subtask_n_paren)
 
 
-        # accuracy = calculate_accuracy(thresholds, data, subtask_paren, paren_token_ids)
         accuracy, avg_correct_conf, avg_incorrect_conf = calculate_accuracy_and_confidence(thresholds, data, subtask_paren, paren_token_ids, use_second_highest=True)
 
         activated_heads[head_name] = {
@@ -342,7 +309,7 @@ def analyze_macro_f1_results(result_path, paren_token_ids, model, thresholds):
         }
 
     # Save final result
-    save_path = os.path.join(result_path, "headwise_macro_metrics.json")
+    save_path = os.path.join(result_path, "macro_metrics.json")
     save_file(head_avg_metrics, save_path)
     print(f"\nSaved headwise per-threshold metrics to: {save_path}")
 
@@ -410,48 +377,83 @@ def accuracy_generalization(result_path, paren_token_ids, model, threshold_value
         "per_subtask_heads": per_subtask_output
     }
 
-    save_path = os.path.join(result_path, f"head_generalization_{int(threshold_value * 100)}_tidx_{threshold_index}.json")
+    save_path = os.path.join(result_path, f"head_generalization_{threshold_index}.json")
     save_file(final_output, save_path)
     print(f"\nSaved full head generalization summary to: {save_path}")
-
 
     del final_output, heads_that_pass, per_subtask_output, generalization_groups
     clear_cache()
     time.sleep(0.5)
 
-
-def main():
-    models = read_json("utils/models.json")
-    models = models[-3:] 
-    for m in models:
-        model_name = m["name"]
-        cache_dir = m["cache"]
-        print(f"Running experiments for {model_name}")
-        model = load_model(model_name, cache_dir)
-        HEADS = [(layer, head) for layer in range(model.cfg.n_layers) for head in range(model.cfg.n_heads)]
-        folder_name = m["name"].split("/")[-1]
-        proj_results_path = f"results/proj_experiment/projections/{folder_name}/final_v/attn/proj"
-        thresholds = [0.5, 0.6, 0.7, 0.8, 0.9] # threholds for calculating accuracy, precision, recall, f1
-
-        result_path = f"results/proj_experiment/attn_results/{folder_name}/final_v/attn/results/proj"
-        create_results_dir(result_path)
-
-        paren_token_ids = get_paren_logit_idx(folder_name)
-
-        for paren in tqdm(paren_token_ids):
-            subtask_paren = model.tokenizer.decode(paren)
-            process_attention_data(proj_results_path, result_path, thresholds, HEADS, subtask_paren=subtask_paren, paren_token_ids=paren_token_ids)       
-        
-        # macro F1-score, average precision and recall
-        analyze_macro_f1_results(result_path, paren_token_ids, model, thresholds)
-        print(f"Finished experiments for {model_name}")
-
-        # accuracy generalization
-        accuracy_generalization(result_path, paren_token_ids, model, threshold_value=0.7)
+def process_proj_results(model, folder_name):
+    HEADS = [(layer, head) for layer in range(model.cfg.n_layers) for head in range(model.cfg.n_heads)]
+    proj_results_path = f"results/proj_experiment/projections/{folder_name}/final_v/attn/proj"
+    thresholds = [0.5, 0.6, 0.7, 0.8, 0.9] # threholds for calculating accuracy, precision, recall, f1
+    result_path = f"results/proj_experiment/attn_results/{folder_name}/final_v1/"
+    create_results_dir(result_path)
+    paren_token_ids = get_paren_logit_idx(folder_name)
+    for paren in tqdm(paren_token_ids):
+        subtask_paren = model.tokenizer.decode(paren)
+        process_attention_data(proj_results_path, result_path, thresholds, HEADS, subtask_paren=subtask_paren, paren_token_ids=paren_token_ids)       
+    
+    # macro F1-score, average precision and recall
+    analyze_macro_f1_results(result_path, paren_token_ids, model, thresholds)
+    print(f"Finished experiments for {folder_name}")
+    # accuracy generalization
+    accuracy_generalization(result_path, paren_token_ids, model, threshold_value=0.7)
 
     del model
     gc.collect()
     torch.cuda.empty_cache()
+
+def count_heads(attn_results_path):
+    general_heads = f"{attn_results_path}/head_generalization_0.json"
+    general_heads = read_json(general_heads)
+    one_general_heads = general_heads["generalization_groups"]["1-general-heads"]["heads"]
+    two_general_heads = general_heads["generalization_groups"]["2-general-heads"]["heads"]
+    try:
+        three_general_heads = general_heads["generalization_groups"]["3-general-heads"]["heads"]
+    except:
+        three_general_heads = [] 
+
+    try:
+        four_general_heads = general_heads["generalization_groups"]["4-general-heads"]["heads"]
+    except:
+        four_general_heads = []
+    
+    all_heads = {}
+    all_heads["1-general-heads"] = len(one_general_heads)
+    all_heads["2-general-heads"] = len(two_general_heads)
+    all_heads["3-general-heads"] = len(three_general_heads)
+    all_heads["4-general-heads"] = len(four_general_heads)
+    return all_heads
+
+def main():
+    models = read_json("utils/models.json")
+    models = models[-2:]
+    # count the number of generalization heads for each model
+    model_generalization_heads = {}
+    # f1-score
+    for m in models:
+        pdb.set_trace()
+        model_name = m["name"]
+        cache_dir = m["cache"]
+        model = load_model(model_name, cache_dir)
+        folder_name = m["name"].split("/")[-1]
+
+        process_proj_results(model, folder_name)
+        # result_dir = f"results/proj_experiment/improve_performance/final_v/{folder_name}/attn/f1-score/last_paren/new"
+        attn_results_path = f"results/proj_experiment/attn_results/{folder_name}/final_v1/"
+
+        results = count_heads(attn_results_path)
+    
+        model_generalization_heads[folder_name] = results
+    
+    # Step 2: Save the results
+    results_path = "results/temp_results/generalization_heads.json"
+    create_results_dir("results/temp_results")
+    save_file(model_generalization_heads, results_path)
+
 
 if __name__ == "__main__":
     main()

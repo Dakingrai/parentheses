@@ -1,59 +1,43 @@
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
-from datasets import load_dataset
-import tempfile
-import subprocess
+import json
+from tqdm import tqdm
+from transformer_lens import HookedTransformer
+import pdb
+import os
+import gc
+import time
+import random
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-# Load CodeLlama-7B model and tokenizer
-model_name = "codellama/CodeLlama-7b-hf"  # Replace with your specific model variant
-cache_dir = "../../../projects/ziyuyao/codellama/codellama-7b-hf"
-tokenizer = AutoTokenizer.from_pretrained(model_name, cache_dir=cache_dir)
-model = AutoModelForCausalLM.from_pretrained(model_name, cache_dir=cache_dir).to(device)
+# Load necessary utilities
+from utils.general_utils import MyDataset, load_model
 
-# Load HumanEval dataset
-dataset = load_dataset("openai_humaneval", split="test")
 
-def evaluate_humaneval():
-    correct = 0
-    total = len(dataset)
-    
-    for problem in dataset:
-        # Prepare prompt and test cases
-        prompt = problem["prompt"]
-        test_code = problem["test"]
-        
-        # Generate completion
-        inputs = tokenizer(prompt, return_tensors="pt", return_attention_mask=False).to(device)
-        outputs = model.generate(
-            **inputs,
-            max_new_tokens=512,
-            pad_token_id=tokenizer.eos_token_id,
-            temperature=0.0  # Greedy decoding for pass@1
-        )
-        
-        # Decode and format code
-        generated_code = tokenizer.decode(outputs[0], skip_special_tokens=True)
-        full_code = generated_code + "\n" + test_code
-        
-        # Test in isolated environment
-        with tempfile.NamedTemporaryFile(mode="w", suffix=".py") as f:
-            f.write(full_code)
-            f.flush()
-            try:
-                result = subprocess.run(
-                    ["python", f.name],
-                    capture_output=True,
-                    text=True,
-                    timeout=5
-                )
-                if result.returncode == 0:
-                    correct += 1
-            except:
-                pass
-                
-    return correct / total * 100
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Run evaluation
-accuracy = evaluate_humaneval()
-print(f"HumanEval Accuracy: {accuracy:.2f}%")
+def read_json(file_path):
+    with open(file_path, 'r') as f:
+        data = json.load(f)
+    return data
+
+def save_file(data, file_name):
+    """Save data to a JSON file."""
+    with open(file_name, 'w') as f:
+        json.dump(data, f, indent=4)
+
+
+
+def main():
+    random.seed(42)
+    models = read_json("utils/models.json")
+    n_paren = 4 # Number of parentheses to consider
+    models = models[-1:]
+    for model in models:
+        print(f"Running experiments for {model['name']}")
+        model_name = model["name"]
+        cache_dir = model["cache"]
+        folder_name = model["name"].split("/")[-1]
+        model = load_model(model_name, cache_dir)
+        pdb.set_trace()
+
+if __name__ == "__main__":
+    main()
